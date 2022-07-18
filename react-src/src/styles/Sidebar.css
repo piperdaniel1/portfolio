@@ -18,18 +18,25 @@
 }
 
 @keyframes scroll-sidebar {
-  from {min-width: 60px};
-  to {min-width: 250px};
+  from {width: 75px};
+  to {width: 250px};
+}
+
+@keyframes scroll-sidebar-close {
+  from {width: 250px};
+  to {width: 75px};
 }
 
 .side-header-bar.active {
-  min-width: 250px;
+  width: 250px;
   animation-name: scroll-sidebar;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
 }
 
 .side-header-bar.inactive {
-  min-width: 60px;
+  width: 75px;
+  animation-name: scroll-sidebar-close;
+  animation-duration: 0.5s;
 }
 
 .hamburger-wrapper {
@@ -98,20 +105,27 @@ p.sidebar-nav-text-button:hover {
 }
 
 @keyframes sidebar-nav-buttons-scroll {
-  from {transform: translate3d(-180px, 0, 0); width: 0px;};
-  to {transform: translate3d(0, 0, 0); width: 100%;};
+  from {transform: translate3d(-180px, 0px, 0px); width: 0px};
+  to {transform: translate3d(0px, 0px, 0px); width: 100%};
+}
+
+@keyframes sidebar-nav-buttons-close {
+  from {transform: translate3d(0px, 0px, 0px); width: 100%};
+  to {transform: translate3d(-180px, 0px, 0px); width: 0px};
 }
 
 .sidebar-nav-buttons.active {
-  padding: 15px;
+  padding-left: 15px;
   display: flex;
+  transform: translate3d(0px, 0px, 0px);
   animation-name: sidebar-nav-buttons-scroll;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
 }
 
 .sidebar-nav-buttons.inactive {
-  display: none;
-  transform: translate3d(-300px, 0, 0);
+  transform: translate3d(-180px, 0px, 0px);
+  animation-name: sidebar-nav-buttons-close;
+  animation-duration: 0.4s;
 }
 
 .sidebar-hamburger-close.active {
