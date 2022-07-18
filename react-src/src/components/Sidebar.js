@@ -1,21 +1,23 @@
 import React from 'react';
 import '../styles/Sidebar.css';
+import {VscChromeClose} from 'react-icons/vsc'
 
 function Sidebar() {
   const [isOpen, setIsOpen] = React.useState(false);
 
-  React.useEffect(() => {
-    if (isOpen) {
-    }
-  }, [isOpen]);
-
   return (
     <div class={isOpen ? 'side-header-bar active':'side-header-bar inactive'}>
       <div class="hamburger-wrapper">
-        <div class="sidebar-hamburger hamburger-icon" onClick={() => setIsOpen(!isOpen)}>
+        <div class={isOpen ? "sidebar-hamburger hamburger-icon inactive":"sidebar-hamburger hamburger-icon active"} 
+             onClick={() => setIsOpen(!isOpen)}>
           <div class="hamburger-icon-line"></div>
           <div class="hamburger-icon-line"></div>
           <div class="hamburger-icon-line"></div>
+        </div>
+
+        <div class={isOpen ? "sidebar-hamburger-close active":"sidebar-hamburger-close inactive"}
+             onClick={() => setIsOpen(!isOpen)}>
+          <VscChromeClose/>
         </div>
       </div>
 
