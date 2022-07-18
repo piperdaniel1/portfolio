@@ -6,6 +6,9 @@
 
 .top-header-bar {
   background-color: grey;
+  height: 125px;
+  width: 100vw;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
