@@ -9,7 +9,7 @@ function Header() {
         <img class='header-logo-image' src={logo} alt="logo" />
         <h1 class='header-name'>Daniel Piper</h1>
       </div>
-      <button class="header-contact-button">Contact me!</button>
+      <button class="header-contact-button">Contact Me</button>
     </div>
   );
 }

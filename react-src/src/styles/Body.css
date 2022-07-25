@@ -1,0 +1,29 @@
+.body-section {
+  width: 100%;
+  padding: 20px;
+}
+
+.main-title-text {
+  color: #fff;
+  font-size: 50px;
+  font-family: 'Roboto', sans-serif;
+  margin: 50px;
+  margin-bottom: 20px;
+}
+
+.secondary-title-text {
+  color: #fff;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+  margin: 50px;
+  margin-top: 20px;
+}
+
+.main-title-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 100%;
+
+}
