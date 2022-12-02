@@ -7,7 +7,6 @@ import Body from './Body';
 function App() {
   return (
     <div className="App">
-      <Sidebar />
       <div class="vertical-content">
         <Header />
         <Body />

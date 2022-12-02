@@ -1,11 +1,17 @@
 .header-name {
   font-size: 40px;
   color: floralwhite;
-  padding-left: 5px;
+  padding-left: 0px;
+  margin: 4px;
+}
+.header-description {
+  padding-left: 0px;
+  margin: 4px;
+  color: floralwhite;
 }
 
 .top-header-bar {
-  background-color: grey;
+  background-color: rgb(146, 146, 146);
   height: 125px;
   width: 100%;
 
@@ -13,9 +19,9 @@
   justify-content: space-between;
   align-items: center;
   border-bottom-width: 3px;
-  border-bottom-color: green;
+  border-bottom-color: rgb(255, 255, 255);
   border-bottom-style: solid;
-  border-left-width: 3px;
+  border-left-width: 0px;
   border-left-color: green;
   border-left-style: solid;
 }
@@ -29,9 +35,11 @@
 .header-logo-image {
   width: 100px;
   height: 100px;
-  border-width: 2px;
+  border-width: 1px;
+  border-style: solid;
   border-color: black;
-  padding: 10px;
+  border-radius: 70px;
+  margin: 10px;
 }
 
 .header-contact-button {
@@ -50,4 +58,10 @@
   background-color: green;
 }
 
+.page-title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 20px;
+}
 
