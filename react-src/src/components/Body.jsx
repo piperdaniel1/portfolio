@@ -9,7 +9,9 @@ function Header() {
       <div class="main-title-bar">
         <h1 class="main-title-text">About Me</h1>
         <p className='paragraph-text-block'>
-          Hello there!
+          I'm a senior Computer Science college student at Oregon State University. My education has touched on all aspects of programming,
+          but I have focused especially on Frontend and Backend web development. I have created multiple social networking sites for school
+          and am now focused on creating a full stack web app to view home tempatures for my senior Capstone project.
         </p>
         <h1 class="main-title-text">Resume</h1>
         <p className='paragraph-text-block'>

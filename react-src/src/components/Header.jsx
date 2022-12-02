@@ -12,7 +12,7 @@ function Header() {
           <h2 class='header-description'>Full Stack Web Development</h2>
         </div>
       </div>
-      <button class="header-contact-button">Contact Me</button>
+      <a href="mailto:piperdaniel1@gmail.com"><button class="header-contact-button">Contact Me</button></a>
     </div>
   );
 }
