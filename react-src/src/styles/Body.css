@@ -1,32 +1,12 @@
+.main-body-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
 .body-section {
   width: 100%;
-  padding: 20px;
-}
-
-.main-title-text {
-  color: #fff;
-  font-size: 50px;
-  font-family: 'Roboto', sans-serif;
-  margin: 30px;
-  margin-left: 50px;
-  margin-bottom: 20px;
-}
-
-.paragraph-text-block {
-  color: #fff;
-  font-size: 30px;
-  font-family: 'Roboto', sans-serif;
-  margin: 30px;
-  margin-left: 50px;
-  margin-top: 0px;
-}
-
-.main-title-bar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: left;
-  width: 75%;
 }
 
 .link-block {
