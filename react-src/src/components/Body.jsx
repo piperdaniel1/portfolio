@@ -44,6 +44,7 @@ function Header() {
               color: '#fff',
               fontSize: '35px',
               fontFamily: "'Roboto', sans-serif",
+              marginBottom: '20px',
             }}>Current Plans</h2>
 
             <p className='paragraph-text-block' style={{
@@ -58,6 +59,23 @@ function Header() {
           </div>
 
           <div className='work-experience-section'>
+            <h2 style={{
+              color: '#fff',
+              fontSize: '35px',
+              fontFamily: "'Roboto', sans-serif",
+              marginTop: '55px',
+              marginBottom: '20px',
+            }}>Work Experience</h2>
+
+            <p className='paragraph-text-block' style={{
+              color: '#fff',
+              fontSize: '30px',
+              fontFamily: "'Roboto', sans-serif",
+            }}>
+              I'm a senior Computer Science student at Oregon State University. My education has touched on all aspects of programming,
+              but I have focused especially on Frontend and Backend web development. I have created multiple social networking sites for school
+              and am now focused on creating a full stack web app to view home tempatures for my senior Capstone project.
+            </p>
           </div>
         </div>
 
