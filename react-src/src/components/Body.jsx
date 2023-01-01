@@ -5,6 +5,11 @@ import portfolio from '../sprites/Portfolio.pdf';
 import headshot from '../sprites/daniel2.jpg';
 
 function Header() {
+  let innerExperienceStyle = {
+    color: '#fff',
+    fontSize: '24px',
+    fontFamily: "'Roboto', sans-serif",
+  }
   return (
     <div class="body-section">
       <div class="main-title-bar" style={{
@@ -67,16 +72,56 @@ function Header() {
               marginBottom: '20px',
             }}>Work Experience</h2>
 
-            <p className='paragraph-text-block' style={{
+            <ul className='paragraph-text-block' style={{
               color: '#fff',
               fontSize: '30px',
               fontFamily: "'Roboto', sans-serif",
             }}>
-              I'm a senior Computer Science student at Oregon State University. My education has touched on all aspects of programming,
-              but I have focused especially on Frontend and Backend web development. I have created multiple social networking sites for school
-              and am now focused on creating a full stack web app to view home tempatures for my senior Capstone project.
-            </p>
+              <li>IT Technician - Oregon State University
+                  <br />
+                  <span style={innerExperienceStyle}>I worked on the frontend and backend of the College of Business tech stack.
+                  My time at Oregon State helped me learn valuable communication skills interfacing with faculty and students, especially when designing and building
+                  internal tools and scripts for the College of Business.</span>
+              </li>
+              <li>IT Technician - Oregon State University
+                  <br />
+                  <span style={innerExperienceStyle}>I worked on the frontend and backend of the College of Business tech stack.
+                  My time at Oregon State helped me learn valuable communication skills interfacing with faculty and students, especially when designing and building
+                  internal tools and scripts for the College of Business.</span>
+              </li>
+            </ul>
           </div>
+
+          <div className='notable-projects-section'>
+            <h2 style={{
+              color: '#fff',
+              fontSize: '35px',
+              fontFamily: "'Roboto', sans-serif",
+              marginTop: '55px',
+              marginBottom: '20px',
+            }}>Notable Projects</h2>
+
+            <ul className='paragraph-text-block' style={{
+              color: '#fff',
+              fontSize: '30px',
+              fontFamily: "'Roboto', sans-serif",
+            }}>
+              <li>Online Chess AI
+                  <br />
+                  <br />
+                  <span style={innerExperienceStyle}>I worked on the frontend and backend of the College of Business tech stack.
+                  My time at Oregon State helped me learn valuable communication skills interfacing with faculty and students, especially when designing and building
+                  internal tools and scripts for the College of Business.</span>
+              </li>
+              <li>IT Technician - Oregon State University
+                  <br />
+                  <span style={innerExperienceStyle}>I worked on the frontend and backend of the College of Business tech stack.
+                  My time at Oregon State helped me learn valuable communication skills interfacing with faculty and students, especially when designing and building
+                  internal tools and scripts for the College of Business.</span>
+              </li>
+            </ul>
+          </div>
+
         </div>
 
         {/* <p className='paragraph-text-block'>
