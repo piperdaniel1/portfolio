@@ -3,6 +3,7 @@ import '../styles/Body.css';
 import resume from '../sprites/Resume.pdf';
 import portfolio from '../sprites/Portfolio.pdf';
 import headshot from '../sprites/daniel2.jpg';
+import TechBubble from './TechBubble';
 
 function Header() {
   let innerExperienceStyle = {
@@ -108,6 +109,7 @@ function Header() {
             }}>
               <li>Online Chess AI
                   <br />
+                  <TechBubble lang='react' />
                   <br />
                   <span style={innerExperienceStyle}>I worked on the frontend and backend of the College of Business tech stack.
                   My time at Oregon State helped me learn valuable communication skills interfacing with faculty and students, especially when designing and building

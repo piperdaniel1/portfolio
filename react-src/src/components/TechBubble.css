@@ -1,0 +1,22 @@
+.outer-tech-bubble {
+    display: inline-block;
+}
+
+.react-tech-bubble {
+    display: flex;
+    align-items: center;
+    background-color: #525252;
+    padding: 5px;
+    border-radius: 15px;
+    border: 2.5px solid #00aaff
+}
+
+.react-tech-name {
+    font-size: 15px;
+    margin: 0px;
+}
+
+.react-tech-logo {
+    width: 33px;
+    margin-right: 5px;
+}
