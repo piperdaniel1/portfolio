@@ -4,6 +4,8 @@ import firebaseLogo from '../sprites/firebase.png';
 import pythonLogo from '../sprites/python.png';
 import rustLogo from '../sprites/rust.png';
 import cppLogo from '../sprites/cpp.png';
+import cLogo from '../sprites/c.png';
+import kotlinLogo from '../sprites/kotlin.png';
 import './TechBubble.css';
 
 export default function TechBubble(props) {
@@ -69,6 +71,28 @@ export default function TechBubble(props) {
           <div className='cpp-tech-bubble'>
             <img className='tech-logo' src={cppLogo} alt='C++ Logo' />
             <p className='tech-name'>C++</p>
+          </div>
+        </a>
+      </div>
+    )
+  } else if (props.lang === 'c') {
+    return (
+      <div className='outer-tech-bubble'>
+        <a className='tech-bubble-link' href='https://en.wikipedia.org/wiki/C_(programming_language)'>
+          <div className='c-tech-bubble'>
+            <img className='tech-logo' src={cLogo} alt='C Logo' />
+            <p className='tech-name'>C</p>
+          </div>
+        </a>
+      </div>
+    )
+  } else if (props.lang === 'kotlin') {
+    return (
+      <div className='outer-tech-bubble'>
+        <a className='tech-bubble-link' href='https://kotlinlang.org/'>
+          <div className='kotlin-tech-bubble'>
+            <img className='tech-logo' src={kotlinLogo} alt='Kotlin Logo' />
+            <p className='tech-name'>Kotlin</p>
           </div>
         </a>
       </div>

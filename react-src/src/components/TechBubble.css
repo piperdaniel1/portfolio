@@ -70,3 +70,22 @@
     border-radius: 15px;
     border: 2.5px solid #00aaff
 }
+
+.c-tech-bubble {
+    display: flex;
+    align-items: center;
+    background-color: #525252;
+    padding: 5px;
+    border-radius: 15px;
+    border: 2.5px solid #00aaff
+}
+
+.kotlin-tech-bubble {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 15px;
+    border: 2.5px solid #c01df1;
+    color: black;
+}

@@ -115,6 +115,8 @@ function Header() {
                   <TechBubble lang='python' />
                   <TechBubble lang='rust' />
                   <TechBubble lang='cpp' />
+                  <TechBubble lang='c' />
+                  <TechBubble lang='kotlin' />
                   <br />
                   <span style={innerExperienceStyle}>I worked on the frontend and backend of the College of Business tech stack.
                   My time at Oregon State helped me learn valuable communication skills interfacing with faculty and students, especially when designing and building
