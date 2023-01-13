@@ -110,6 +110,10 @@ function Header() {
               <li>Online Chess AI
                   <br />
                   <TechBubble lang='react' />
+                  <TechBubble lang='node' />
+                  <TechBubble lang='firebase' />
+                  <TechBubble lang='python' />
+                  <TechBubble lang='rust' />
                   <br />
                   <span style={innerExperienceStyle}>I worked on the frontend and backend of the College of Business tech stack.
                   My time at Oregon State helped me learn valuable communication skills interfacing with faculty and students, especially when designing and building
