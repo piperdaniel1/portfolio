@@ -40,7 +40,7 @@
     background-color: #525252;
     padding: 5px;
     border-radius: 15px;
-    border: 2.5px solid #00aaff
+    border: 2.5px solid #f0bd15
 }
 
 .python-tech-bubble {
@@ -60,4 +60,13 @@
     border-radius: 15px;
     border: 2.5px solid #a55f26;
     color: black;
+}
+
+.cpp-tech-bubble {
+    display: flex;
+    align-items: center;
+    background-color: #525252;
+    padding: 5px;
+    border-radius: 15px;
+    border: 2.5px solid #00aaff
 }

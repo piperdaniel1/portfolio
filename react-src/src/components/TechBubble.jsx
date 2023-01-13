@@ -3,6 +3,7 @@ import nodeLogo from '../sprites/node.png';
 import firebaseLogo from '../sprites/firebase.png';
 import pythonLogo from '../sprites/python.png';
 import rustLogo from '../sprites/rust.png';
+import cppLogo from '../sprites/cpp.png';
 import './TechBubble.css';
 
 export default function TechBubble(props) {
@@ -57,6 +58,17 @@ export default function TechBubble(props) {
           <div className='rust-tech-bubble'>
             <img className='tech-logo' src={rustLogo} alt='Rust Logo' />
             <p className='tech-name'>Rust</p>
+          </div>
+        </a>
+      </div>
+    )
+  } else if (props.lang === 'cpp') {
+    return (
+      <div className='outer-tech-bubble'>
+        <a className='tech-bubble-link' href='https://isocpp.org/'>
+          <div className='cpp-tech-bubble'>
+            <img className='tech-logo' src={cppLogo} alt='C++ Logo' />
+            <p className='tech-name'>C++</p>
           </div>
         </a>
       </div>
