@@ -4,6 +4,7 @@ import resume from '../sprites/Resume.pdf';
 import portfolio from '../sprites/Portfolio.pdf';
 import headshot from '../sprites/daniel2.jpg';
 import TechBubble from './TechBubble';
+import ChessGame from './ChessGame';
 
 function Header() {
   let innerExperienceStyle = {
@@ -122,6 +123,9 @@ function Header() {
                   My time at Oregon State helped me learn valuable communication skills interfacing with faculty and students, especially when designing and building
                   internal tools and scripts for the College of Business.</span>
               </li>
+
+              <ChessGame />
+
               <li>IT Technician - Oregon State University
                   <br />
                   <span style={innerExperienceStyle}>I worked on the frontend and backend of the College of Business tech stack.
