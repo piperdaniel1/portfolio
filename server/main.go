@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"net"
 	"net/http"
+	"time"
 )
 
 func main() {
@@ -20,61 +21,81 @@ func main() {
 		var query QueryFen
 		json.NewDecoder(r.Body).Decode(&query)
 
+		print("/query/fen from " + r.RemoteAddr + " -> ")
+
 		// Dial port 4321 and get response
 		conn, err := net.Dial("tcp", "localhost:4321")
-
 		if err != nil {
-			println(err.Error())
+			// set error response
+			w.WriteHeader(500)
+			w.Write([]byte("Unable to establish connection to engine."))
+			println("500 ERR Unable connect to engine 01")
 			return
 		}
 
 		// Send a "init w {fen}" to the engine
-		conn.Write([]byte("init w fen " + query.Fen))
-
-		// Read the response
-		println("Reading response...")
-		buf := make([]byte, 1024)
-		n, err := conn.Read(buf)
+		_, err = conn.Write([]byte("init w fen " + query.Fen))
 		if err != nil {
-			println(err.Error())
+			// set error response
+			w.WriteHeader(500)
+			w.Write([]byte("Unable to establish connection to engine."))
+			println("500 ERR Unable connect to engine 02")
 			return
 		}
 
-		println("Response: " + string(buf[:n]))
+		// Read the response
+		buf := make([]byte, 1024)
+		_, err = conn.Read(buf)
+		if err != nil {
+			w.WriteHeader(500)
+			w.Write([]byte("Unable to establish connection to engine."))
+			println("500 ERR Unable connect to engine 03")
+			return
+		}
+
 		// Make sure the response is "200 ok" in buf
 		if string(buf[:6]) != "200 ok" {
-			println("Error: " + string(buf[:n]))
+			w.WriteHeader(500)
+			w.Write([]byte("Unable to establish connection to engine."))
+			println("500 ERR Unable connect to engine 04")
 			return
 		}
 
 		// refresh the connection
 		conn.Close()
 
-		// Dial port 4321 and get response
+		// Redial port 4321 and get response
 		conn, err = net.Dial("tcp", "localhost:4321")
-
 		if err != nil {
-			println(err.Error())
+			w.WriteHeader(500)
+			w.Write([]byte("Unable to establish connection to engine."))
+			println("500 ERR Unable connect to engine 05")
 			return
 		}
 
 		// Send a "query {time in seconds}" to the engine
-		conn.Write([]byte("query " + string(query.Time/1000)))
-
-		println("Reading response...")
-		// Read the response (make sure to wait for a bit)
-		// conn.SetDeadline(time.Now().Add(5 * time.Second))
-		n, err = conn.Read(buf)
-
+		_, err = conn.Write([]byte("query " + string(query.Time/1000)))
 		if err != nil {
-			println(err.Error())
+			w.WriteHeader(500)
+			w.Write([]byte("Unable to establish connection to engine."))
+			println("500 ERR Unable connect to engine 06")
 			return
 		}
 
-		println("Response: " + string(buf[:n]))
+		// Read the response (make sure to wait for a bit)
+		conn.SetDeadline(time.Now().Add(5 * time.Second))
+		n, err := conn.Read(buf)
+		if err != nil {
+			w.WriteHeader(500)
+			w.Write([]byte("Unable to establish connection to engine."))
+			println("500 ERR Unable connect to engine 07")
+			return
+		}
 
 		// Send response back
 		w.Write(buf[:n])
+
+		println("200 OK (" + string(buf[:n]) + ")")
 	})
 
 	println("Server is running: http://localhost:8080")
