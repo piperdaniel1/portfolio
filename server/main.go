@@ -7,8 +7,13 @@ import (
 	"time"
 )
 
+func enableCors(w *http.ResponseWriter) {
+    (*w).Header().Set("Access-Control-Allow-Origin", "*")
+}
+
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+        enableCors(&w)
 		w.Write([]byte("v1 of piperdaniel1 portfolio API"))
 	})
 
@@ -17,6 +22,8 @@ func main() {
 		Time int32  // Time in ms that the computer should think for
 	}
 	http.HandleFunc("/query/fen", func(w http.ResponseWriter, r *http.Request) {
+        enableCors(&w)
+
 		// Parse body into JSON
 		var query QueryFen
 		json.NewDecoder(r.Body).Decode(&query)
