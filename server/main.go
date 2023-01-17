@@ -2,18 +2,19 @@ package main
 
 import (
 	"encoding/json"
+	"io/ioutil"
 	"net"
 	"net/http"
 	"time"
 )
 
 func enableCors(w *http.ResponseWriter) {
-    (*w).Header().Set("Access-Control-Allow-Origin", "*")
+	(*w).Header().Set("Access-Control-Allow-Origin", "*")
 }
 
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-        enableCors(&w)
+		enableCors(&w)
 		w.Write([]byte("v1 of piperdaniel1 portfolio API"))
 	})
 
@@ -22,7 +23,16 @@ func main() {
 		Time int32  // Time in ms that the computer should think for
 	}
 	http.HandleFunc("/query/fen", func(w http.ResponseWriter, r *http.Request) {
-        enableCors(&w)
+		enableCors(&w)
+
+		// print request body
+		body, err := ioutil.ReadAll(r.Body)
+
+		if err != nil {
+			panic(err)
+		}
+
+		println(string(body))
 
 		// Parse body into JSON
 		var query QueryFen
@@ -101,6 +111,7 @@ func main() {
 
 		// Send response back
 		w.Write(buf[:n])
+		w.WriteHeader(200)
 
 		println("200 OK (" + string(buf[:n]) + ")")
 	})
