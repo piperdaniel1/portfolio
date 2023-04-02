@@ -6,6 +6,7 @@ import (
 	"net"
 	"net/http"
 	"time"
+	"fmt"
 )
 
 func enableCors(w *http.ResponseWriter) {
@@ -25,20 +26,27 @@ func main() {
 	http.HandleFunc("/query/fen", func(w http.ResponseWriter, r *http.Request) {
 		enableCors(&w)
 
-		// print request body
+		// Read request body
 		body, err := ioutil.ReadAll(r.Body)
 
 		if err != nil {
 			panic(err)
 		}
 
-		println(string(body))
+		println("Request body: " + string(body))
 
 		// Parse body into JSON
 		var query QueryFen
-		json.NewDecoder(r.Body).Decode(&query)
+		err = json.Unmarshal(body, &query)
+		if err != nil {
+			w.WriteHeader(400)
+			w.Write([]byte("Invalid JSON format"))
+			println("400 ERR Invalid JSON format")
+			return
+		}
 
 		print("/query/fen from " + r.RemoteAddr + " -> ")
+		println("FEN: " + query.Fen + " | Time: " + fmt.Sprintf("%d", query.Time) + "ms")
 
 		// Dial port 4321 and get response
 		conn, err := net.Dial("tcp", "localhost:4321")
@@ -73,7 +81,7 @@ func main() {
 		// Make sure the response is "200 ok" in buf
 		if string(buf[:6]) != "200 ok" {
 			w.WriteHeader(500)
-			w.Write([]byte("Unable to establish connection to engine."))
+			w.Write([]byte("Internal engine error."))
 			println("500 ERR Unable connect to engine 04")
 			return
 		}
