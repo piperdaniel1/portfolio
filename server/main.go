@@ -11,6 +11,8 @@ import (
 
 func enableCors(w *http.ResponseWriter) {
 	(*w).Header().Set("Access-Control-Allow-Origin", "*")
+	(*w).Header().Set("Access-Control-Allow-Methods", "POST, GET, OPTIONS")
+	(*w).Header().Set("Access-Control-Allow-Headers", "Content-Type")
 }
 
 func main() {
@@ -25,6 +27,11 @@ func main() {
 	}
 	http.HandleFunc("/query/fen", func(w http.ResponseWriter, r *http.Request) {
 		enableCors(&w)
+		
+		if r.Method == "OPTIONS" {
+			w.WriteHeader(http.StatusOK)
+			return
+		}
 
 		// Read request body
 		body, err := ioutil.ReadAll(r.Body)
@@ -41,7 +48,7 @@ func main() {
 		if err != nil {
 			w.WriteHeader(400)
 			w.Write([]byte("Invalid JSON format"))
-			println("400 ERR Invalid JSON format")
+			println("400 ERR Invalid JSON format: " + string(err.Error()))
 			return
 		}
 
