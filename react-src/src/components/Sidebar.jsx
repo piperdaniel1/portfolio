@@ -6,33 +6,33 @@ function Sidebar() {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <div class={isOpen ? 'side-header-bar active':'side-header-bar inactive'}>
-      <div class="hamburger-wrapper">
-        <div class={isOpen ? "sidebar-hamburger hamburger-icon inactive":"sidebar-hamburger hamburger-icon active"} 
+    <div className={isOpen ? 'side-header-bar active':'side-header-bar inactive'}>
+      <div className="hamburger-wrapper">
+        <div className={isOpen ? "sidebar-hamburger hamburger-icon inactive":"sidebar-hamburger hamburger-icon active"} 
              onClick={() => setIsOpen(!isOpen)}>
-          <div class="hamburger-icon-line"></div>
-          <div class="hamburger-icon-line"></div>
-          <div class="hamburger-icon-line"></div>
+          <div className="hamburger-icon-line"></div>
+          <div className="hamburger-icon-line"></div>
+          <div className="hamburger-icon-line"></div>
         </div>
 
-        <div class={isOpen ? "sidebar-hamburger-close active":"sidebar-hamburger-close inactive"}
+        <div className={isOpen ? "sidebar-hamburger-close active":"sidebar-hamburger-close inactive"}
              onClick={() => setIsOpen(!isOpen)}>
           <VscChromeClose/>
         </div>
       </div>
 
-      <div class={isOpen ? 'sidebar-nav-buttons active':'sidebar-nav-buttons inactive'}>
-        <div class="sidebar-nav-button">
-          <p class="sidebar-nav-text-button"> Portfolio </p>
+      <div className={isOpen ? 'sidebar-nav-buttons active':'sidebar-nav-buttons inactive'}>
+        <div className="sidebar-nav-button">
+          <p className="sidebar-nav-text-button"> Portfolio </p>
         </div>
-        <div class="sidebar-nav-button">
-          <p class="sidebar-nav-text-button"> About me </p>
+        <div className="sidebar-nav-button">
+          <p className="sidebar-nav-text-button"> About me </p>
         </div>
-        <div class="sidebar-nav-button">
-          <p class="sidebar-nav-text-button"> References </p>
+        <div className="sidebar-nav-button">
+          <p className="sidebar-nav-text-button"> References </p>
         </div>
-        <div class="sidebar-nav-button">
-          <p class="sidebar-nav-text-button"> Contact </p>
+        <div className="sidebar-nav-button">
+          <p className="sidebar-nav-text-button"> Contact </p>
         </div>
       </div>
     </div>

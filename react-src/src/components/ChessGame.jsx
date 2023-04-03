@@ -4,6 +4,34 @@ import { useState } from 'react';
 import './ChessGame.css'
 import axios from 'axios';
 
+async function queryFen(fen, time) {
+  console.log('Querying fen:', fen, 'time:', time);
+  try {
+    const response = await axios.post('http://localhost:8080/query/fen', {
+      Fen: fen,
+      Time: time,
+    });
+
+    console.log('Response:', response.data);
+    // split on space
+    // first part is useless
+    // second part is move
+    // third part is eval
+  
+    let move = response.data.split(' ')[1];
+    console.log('Move:', move);
+    let engine_eval = parseFloat(response.data.split(' ')[2]);
+    console.log('Engine eval:', engine_eval);
+
+    return {
+      from: move.slice(0, 2),
+      to: move.slice(2, 4),
+    };
+  } catch (error) {
+    console.error('Error:', error.message);
+  }
+}
+
 export default function ChessGame() {
   const [game, setGame] = useState(new Chess());
 
@@ -11,11 +39,8 @@ export default function ChessGame() {
     const gameCopy = new Chess(game.fen());
     const result = gameCopy.move(move);
 
-    if (result) {
-      // programatically get engine move from server
-    }
-
     setGame(gameCopy);
+
     return result;
   }
 
@@ -30,6 +55,12 @@ export default function ChessGame() {
     if (move === null) return false; // illegal move
 
     return true;
+  }
+
+  if (game.turn() === 'b') {
+    queryFen(game.fen(), 1000).then((move) => {
+      makeMove(move);
+    });
   }
 
   return (
