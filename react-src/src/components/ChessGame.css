@@ -3,10 +3,44 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 .inner-chess-game-wrapper {
     width: 800px;
+}
+
+.chess-game-header {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.chess-profile-pic {
+    border-radius: 40%;
+    width: 75px;
+    height: 75px;
+}
+.chess-game-player {
+    display: flex;
+    align-items: center;
+}
+.chess-game-player-username {
+    margin: 0px;
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 35px;
+}
+
+.chess-game-header {
+    background-color: rgb(128, 128, 128);
+    margin-bottom: 10px;
+}
+.chess-game-wrapper {
+    background-color: grey;
+    padding: 10px;
+    border: 1px solid rgb(255, 123, 123);
 }

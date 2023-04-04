@@ -110,21 +110,42 @@ function Header() {
             }}>
               <li>Online Chess AI
                   <br />
-                  <TechBubble lang='react' />
-                  <TechBubble lang='node' />
-                  <TechBubble lang='firebase' />
-                  <TechBubble lang='python' />
                   <TechBubble lang='rust' />
+                  <TechBubble lang='python' />
                   <TechBubble lang='cpp' />
-                  <TechBubble lang='c' />
-                  <TechBubble lang='kotlin' />
                   <br />
-                  <span style={innerExperienceStyle}>I worked on the frontend and backend of the College of Business tech stack.
-                  My time at Oregon State helped me learn valuable communication skills interfacing with faculty and students, especially when designing and building
-                  internal tools and scripts for the College of Business.</span>
+
+                  <div className='paragraph-text-block'>
+                   <span style={innerExperienceStyle}>
+                      My chess AI is a testament to my skills as a backend software engineer. Written entirely 
+                      in Rust, it uses the minimax algorithm, along with a transposition table and alpha-beta 
+                      pruning, to increase search speed. Board evaluation is based on various factors such as
+                      piece value and position, making it a formidable opponent for players of all skill levels.
+                    </span>
+
+                    <br />
+                    <ChessGame />
+
+                    <span style={innerExperienceStyle}>
+                      With over 5500 lines of Rust code, this is the third version of the AI. The first was
+                      written in Python but proved to be too slow, while the second was written in C++, which
+                      had its own challenges. Instead of rewriting that version, I took what I had learned and
+                      created this third, stable version in Rust. The AI can operate as an engine server using TCP,
+                      a chess CLI client, or a remote Lichess bot. To make it accessible to you on this site, I created a
+                      Go HTTP web server that converts HTTP requests into TCP requests to the engine, allowing
+                      anyone to play against my AI in real-time from a web browser.
+                    </span>
+                      
+                    <br />
+
+                    <span style={innerExperienceStyle}>
+                      Overall, my chess AI demonstrates
+                      my ability to create complex and efficient software solutions, as well as my passion for
+                      problem-solving and pushing the boundaries of what's possible.
+                    </span>
+                </div>
               </li>
 
-              <ChessGame />
 
               <li>IT Technician - Oregon State University
                   <br />

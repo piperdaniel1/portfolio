@@ -3,6 +3,8 @@ import { Chessboard } from 'react-chessboard';
 import { useState } from 'react';
 import './ChessGame.css'
 import axios from 'axios';
+import WhiteKing from '../sprites/white-chess-king.jpg'
+import BlackKing from '../sprites/black-chess-king.jpg'
 
 async function queryFen(fen, time) {
   console.log('Querying fen:', fen, 'time:', time);
@@ -65,6 +67,20 @@ export default function ChessGame() {
 
   return (
     <div className='chess-game-wrapper'>
+      <div className='chess-game-header'>
+        <div className='chess-game-player'>
+          <img src={WhiteKing} alt="White king" className='chess-profile-pic' />
+          <div className='inner-chess-game-player'>
+            <h2 className='chess-game-player-username'>You (white)</h2>
+          </div>
+        </div>
+        <div className='chess-game-player'>
+          <div className='inner-chess-game-player'>
+            <h2 className='chess-game-player-username'>My AI (black)</h2>
+          </div>
+          <img src={BlackKing} alt="Black king" className='chess-profile-pic' />
+        </div>
+      </div>
       <div className='inner-chess-game-wrapper'>
         <Chessboard id='chessboard' position={game.fen()} onPieceDrop={onDrop}  />
       </div>
