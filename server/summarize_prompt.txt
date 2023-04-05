@@ -1,0 +1,3 @@
+Please summarize the following YouTube video by the channel {{channel_name}}. To aid in your effort, the English audio transcription has been provided.
+Write in a journalistic, objective style. Make sure to include direct quotes from {{channel_name}} to increase your credibility. Your summary should be at least two paragraphs long.
+The video's title is '{{video_title}}'.

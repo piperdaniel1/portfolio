@@ -5,6 +5,8 @@ import (
 	"io/ioutil"
 	"net"
 	"net/http"
+	"os/exec"
+	"strings"
 	"time"
 	"fmt"
 )
@@ -129,6 +131,41 @@ func main() {
 		w.WriteHeader(200)
 
 		println("200 OK (" + string(buf[:n]) + ")")
+	})
+
+	http.HandleFunc("/tools/summarize/", func(w http.ResponseWriter, r *http.Request) {
+		enableCors(&w)
+		id := strings.TrimPrefix(r.URL.Path, "/tools/summarize/")
+
+		// Run the Python script and capture the output
+		cmd := exec.Command(".env/bin/python", "summarize.py", id)
+		output, err := cmd.Output()
+		if err != nil {
+			w.WriteHeader(http.StatusInternalServerError)
+			w.Write([]byte("Error running the Python script: " + err.Error()))
+			return
+		}
+
+		// Parse the JSON object from the output
+		var result map[string]interface{}
+		err = json.Unmarshal(output, &result)
+		if err != nil {
+			w.WriteHeader(http.StatusBadRequest)
+			w.Write([]byte("Error parsing JSON from the Python script"))
+			return
+		}
+
+		// Send the JSON object as the response
+		response, err := json.Marshal(result)
+		if err != nil {
+			w.WriteHeader(http.StatusInternalServerError)
+			w.Write([]byte("Error creating JSON response"))
+			return
+		}
+
+		w.Header().Set("Content-Type", "application/json")
+		w.WriteHeader(http.StatusOK)
+		w.Write(response)
 	})
 
 	println("Server is running: http://localhost:8080")
