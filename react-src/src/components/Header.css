@@ -45,8 +45,8 @@
 }
 
 .header-nav-button {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
     text-decoration: none;
     color: black;
     background-color: white;
@@ -54,7 +54,7 @@
     align-items: center;
 }
 .header-nav-button:hover {
-    background-color: rgb(163, 163, 163);
+    background-color: rgb(245, 245, 245);
     cursor: pointer;
 }
 
@@ -64,7 +64,7 @@
     text-decoration: none;
     color: black;
     background-color: rgb(86, 204, 204);
-    transition: background-color 0.5s ease;
+    transition: background-color 0.25s ease;
     display: flex;
     align-items: center;
 }
@@ -75,6 +75,14 @@
 
 .header-nav-label {
     font-size: 60px;
+}
+.header-nav-icon {
+    margin-left: 4px;
+    color: green;
+    font-size: 50px;
+}
+.header-nav-button:hover .header-nav-icon {
+    color: orange;
 }
 
 .disable-select {

@@ -2,7 +2,8 @@ import React from 'react';
 import '../styles/Body.css';
 import resume from '../sprites/Resume.pdf';
 import portfolio from '../sprites/Portfolio.pdf';
-import headshot from '../sprites/daniel2.jpg';
+// import headshot from '../sprites/daniel2.jpg';
+import coverPhoto from '../sprites/main-cover-photo.jpg';
 import TechBubble from './TechBubble';
 import ChessGame from './ChessGame';
 import HarloughNL from '../sprites/harlough-nl-ex.jpg'
@@ -21,24 +22,12 @@ function Header() {
         alignItems: 'center',
       }}>
         <div className='main-body-header'>
-          <img className='main-body-image' src={headshot} alt='Profile Pic' style={{
-            width: '250px',
-            borderRadius: '35%',
-            marginRight: '25px',
-          }} />
+          <img className='main-body-image' src={coverPhoto} alt='Profile Pic' />
 
           <div className='brief-info'>
-            <h1 class="main-title-text" style={{
-              color: '#fff',
-              fontSize: '50px',
-              fontFamily: "'Roboto', sans-serif",
-            }}>Hey, I'm Daniel Piper.</h1>
+            <h1 class="main-title-text">Hey, I'm Daniel Piper.</h1>
 
-            <h1 class="secondary-title-text" style={{
-              color: '#fff',
-              fontSize: '40px',
-              fontFamily: "'Roboto', sans-serif",
-            }}>Full Stack Web Developer</h1>
+            <h1 class="secondary-title-text">Full Stack Web Developer</h1>
           </div>
         </div>
 
