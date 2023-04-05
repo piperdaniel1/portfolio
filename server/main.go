@@ -8,6 +8,7 @@ import (
 	"os/exec"
 	"strings"
 	"time"
+	"regexp"
 	"fmt"
 )
 
@@ -17,9 +18,69 @@ func enableCors(w *http.ResponseWriter) {
 	(*w).Header().Set("Access-Control-Allow-Headers", "Content-Type")
 }
 
+
+func handleWordleRoute(w http.ResponseWriter, r *http.Request) {
+	enableCors(&w)
+
+	if r.Method != "GET" {
+		w.WriteHeader(http.StatusMethodNotAllowed)
+		w.Write([]byte("Method not allowed"))
+		return
+	}
+
+	dateStr := strings.TrimPrefix(r.URL.Path, "/tools/wordle/")
+	datePattern := regexp.MustCompile(`^\d{4}-\d{2}-\d{2}$`)
+
+	var date time.Time
+	if dateStr == "today" {
+		date = time.Now()
+	} else if datePattern.MatchString(dateStr) {
+		var err error
+		date, err = time.Parse("2006-01-02", dateStr)
+		if err != nil {
+			w.WriteHeader(http.StatusBadRequest)
+			w.Write([]byte("Invalid date format"))
+			return
+		}
+	} else {
+		w.WriteHeader(http.StatusBadRequest)
+		w.Write([]byte("Invalid date format"))
+		return
+	}
+
+	url := fmt.Sprintf("https://www.nytimes.com/svc/wordle/v2/%s.json", date.Format("2006-01-02"))
+	response, err := http.Get(url)
+	if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		w.Write([]byte("Error fetching data from NYT API"))
+		fmt.Println("500 ERR Error fetching data from NYT API:", err)
+		return
+	}
+	defer response.Body.Close()
+
+	body, err := ioutil.ReadAll(response.Body)
+	if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		w.Write([]byte("Error reading data from NYT API"))
+		fmt.Println("500 ERR Error reading data from NYT API:", err)
+		return
+	}
+
+	w.Header().Set("Content-Type", "application/json")
+	w.Write(body)
+}
+
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		enableCors(&w)
+
+		wordlePattern := regexp.MustCompile(`^/tools/wordle/(today|\d{4}-\d{2}-\d{2})$`)
+		if wordlePattern.MatchString(r.URL.Path) {
+			handleWordleRoute(w, r)
+			return
+		}
+
+
 		w.Write([]byte("v1 of piperdaniel1 portfolio API"))
 	})
 
