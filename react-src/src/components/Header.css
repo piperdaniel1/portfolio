@@ -49,9 +49,7 @@
     padding-right: 30px;
     text-decoration: none;
     color: black;
-    background-color: white;
-    display: flex;
-    align-items: center;
+    background-color: white; display: flex; align-items: center;
 }
 .header-nav-button:hover {
     background-color: rgb(245, 245, 245);
@@ -87,4 +85,57 @@
 
 .disable-select {
     user-select: none;
+}
+
+.mobile-nav-dropdown {
+    display: none;
+}
+
+
+@media(max-width: 700px) {
+    .mobile-nav-dropdown {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3px;
+        font-size: 80px;
+        color: black;
+
+        background: none;
+        border: none;
+        margin: 0px;
+        cursor: pointer;
+        outline: none;
+    }
+
+    .mobile-nav-dropdown.shown {
+        font-size: 70px;
+    }
+
+    .mobile-nav-dropdown.shown:hover {
+        font-size: 75px;
+        padding: 0px;
+        color: orange;
+    }
+
+    .mobile-nav-dropdown.hidden:hover {
+        font-size: 85px;
+        padding: 0px;
+        color: orange;
+    }
+
+    .header-bar {
+        justify-content: space-between;
+    }
+
+    .header-nav-buttons {
+        display: none;
+    }
+
+    .header-site-title {
+        font-size: 70px;
+    }
+    .site-title-bg {
+        min-width: 420px;
+    }
 }
