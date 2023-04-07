@@ -9,9 +9,9 @@ function App() {
       <div className="header">
         <Header />
       </div>
-      {/* <div class="vertical-content">
+      <div class="vertical-content">
         <Body />
-      </div> */}
+      </div>
     </div>
   );
 }
