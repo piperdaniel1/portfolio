@@ -17,6 +17,52 @@ export default function Header() {
                 <h1 className='header-site-title disable-select'>Daniel Piper</h1>
             </a>
 
+            <div className={"mobile-header-nav-buttons " + (showDropdown ? 'shown' : 'hidden')}>
+                <div className='header-nav-button m-one'>
+                    <h2 className='header-nav-label disable-select'>Resume</h2>
+                    <FaFileDownload className='header-nav-icon'/>
+                </div>
+                <div className='header-nav-button m-two'>
+                    <h2 className='header-nav-label disable-select'>Projects</h2>
+                </div>
+                <a className='header-nav-button m-three' href='https://github.com/piperdaniel1' target='_blank'>
+                    <h2 className='header-nav-label disable-select'>Github</h2>
+                    <AiFillGithub className='header-nav-icon'/>
+                </a>
+
+                <a className='header-nav-button m-four' href='https://www.linkedin.com/in/daniel-piper-b2a311223/' target='_blank'>
+                    <h2 className='header-nav-label disable-select'>Linkedin</h2>
+                    <AiFillLinkedin className='header-nav-icon'/>
+                </a>
+
+                <a className='primary-nav-button m-five' href='mailto:piperdaniel1@gmail.com'>
+                    <h2 className='header-nav-label disable-select'>Email me</h2>
+                </a>
+            </div>
+
+            <div className="header-nav-buttons">
+                <div className='header-nav-button one'>
+                    <h2 className='header-nav-label disable-select'>Resume</h2>
+                    <FaFileDownload className='header-nav-icon'/>
+                </div>
+                <div className='header-nav-button two'>
+                    <h2 className='header-nav-label disable-select'>Projects</h2>
+                </div>
+                <a className='header-nav-button three' href='https://github.com/piperdaniel1' target='_blank'>
+                    <h2 className='header-nav-label disable-select'>Github</h2>
+                    <AiFillGithub className='header-nav-icon'/>
+                </a>
+
+                <a className='header-nav-button four' href='https://www.linkedin.com/in/daniel-piper-b2a311223/' target='_blank'>
+                    <h2 className='header-nav-label disable-select'>Linkedin</h2>
+                    <AiFillLinkedin className='header-nav-icon'/>
+                </a>
+
+                <a className='primary-nav-button five' href='mailto:piperdaniel1@gmail.com'>
+                    <h2 className='header-nav-label disable-select'>Email me</h2>
+                </a>
+            </div>
+
             <button className={"mobile-nav-dropdown " + (showDropdown ? 'shown' : 'hidden')} onClick={() => {
                 setShowDropdown(!showDropdown)
             }}>
@@ -26,52 +72,6 @@ export default function Header() {
                     <GiHamburgerMenu className='mobile-nav-icon' />
                 }
             </button>
-
-            <div className={"mobile-header-nav-buttons " + (showDropdown ? 'shown' : 'hidden')}>
-                <div className='header-nav-button'>
-                    <h2 className='header-nav-label disable-select'>Resume</h2>
-                    <FaFileDownload className='header-nav-icon'/>
-                </div>
-                <div className='header-nav-button'>
-                    <h2 className='header-nav-label disable-select'>Projects</h2>
-                </div>
-                <a className='header-nav-button' href='https://github.com/piperdaniel1' target='_blank'>
-                    <h2 className='header-nav-label disable-select'>Github</h2>
-                    <AiFillGithub className='header-nav-icon'/>
-                </a>
-
-                <a className='header-nav-button' href='https://www.linkedin.com/in/daniel-piper-b2a311223/' target='_blank'>
-                    <h2 className='header-nav-label disable-select'>Linkedin</h2>
-                    <AiFillLinkedin className='header-nav-icon'/>
-                </a>
-
-                <a className='primary-nav-button' href='mailto:piperdaniel1@gmail.com'>
-                    <h2 className='header-nav-label disable-select'>Email me</h2>
-                </a>
-            </div>
-
-            <div className="header-nav-buttons">
-                <div className='header-nav-button'>
-                    <h2 className='header-nav-label disable-select'>Resume</h2>
-                    <FaFileDownload className='header-nav-icon'/>
-                </div>
-                <div className='header-nav-button'>
-                    <h2 className='header-nav-label disable-select'>Projects</h2>
-                </div>
-                <a className='header-nav-button' href='https://github.com/piperdaniel1' target='_blank'>
-                    <h2 className='header-nav-label disable-select'>Github</h2>
-                    <AiFillGithub className='header-nav-icon'/>
-                </a>
-
-                <a className='header-nav-button' href='https://www.linkedin.com/in/daniel-piper-b2a311223/' target='_blank'>
-                    <h2 className='header-nav-label disable-select'>Linkedin</h2>
-                    <AiFillLinkedin className='header-nav-icon'/>
-                </a>
-
-                <a className='primary-nav-button' href='mailto:piperdaniel1@gmail.com'>
-                    <h2 className='header-nav-label disable-select'>Email me</h2>
-                </a>
-            </div>
         </div>
     );
 }
