@@ -4,6 +4,7 @@ import { AiFillGithub } from 'react-icons/ai'
 import { AiFillLinkedin } from 'react-icons/ai'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import {GrClose} from 'react-icons/gr'
+import {HiCode} from 'react-icons/hi'
 import { useState } from 'react'
 
 export default function Header() {
@@ -24,6 +25,7 @@ export default function Header() {
                 </div>
                 <div className='header-nav-button m-two'>
                     <h2 className='header-nav-label disable-select'>Projects</h2>
+                    <HiCode className='header-nav-icon'/>
                 </div>
                 <a className='header-nav-button m-three' href='https://github.com/piperdaniel1' target='_blank'>
                     <h2 className='header-nav-label disable-select'>Github</h2>
@@ -47,6 +49,7 @@ export default function Header() {
                 </div>
                 <div className='header-nav-button two'>
                     <h2 className='header-nav-label disable-select'>Projects</h2>
+                    <HiCode className='header-nav-icon' style={{fontSize: '58px'}}/>
                 </div>
                 <a className='header-nav-button three' href='https://github.com/piperdaniel1' target='_blank'>
                     <h2 className='header-nav-label disable-select'>Github</h2>
