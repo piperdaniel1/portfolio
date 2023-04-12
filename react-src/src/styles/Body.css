@@ -26,11 +26,48 @@
 .main-title-text {
   color: white;
   font-size: 120px;
+  margin-bottom: 15px;
   font-family: 'Roboto', sans-serif;
 }
 
 .secondary-title-text {
   color: white;
   font-size: 70px;
+  margin-top: 15px;
   font-family: 'Roboto', sans-serif;
+}
+
+@media(max-width: 2100px) {
+  .brief-info {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media(max-width: 1800px) {
+  .brief-info {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+
+  .main-title-text {
+    font-size: 100px;
+    margin-bottom: 10px;
+  }
+
+  .secondary-title-text {
+    margin-top: 10px;
+    font-size: 60px;
+  }
+}
+
+@media(max-width: 1450px) {
+  .main-body-header {
+    flex-direction: column;
+  }
+
+  .main-body-image {
+    width: 100%;
+    max-width: 100%;
+  }
 }
