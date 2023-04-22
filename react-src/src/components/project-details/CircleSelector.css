@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circle-wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  position: relative;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  z-index: 1;
+}
+
+.circle.selected {
+  background-color: orange;
+}
+
+.circle span {
+  color: black;
+}
+
+.line {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 5px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  margin-top: -2.5px;
+  z-index: 0;
+}
+
+.line-section {
+  width: calc(100% / 3);
+  height: 5px;
+  background-color: white;
+  transition: background-color 0.3s;
+}
+
+.line-section.selected {
+  background-color: orange;
+}
