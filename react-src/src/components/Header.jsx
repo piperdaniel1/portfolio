@@ -6,6 +6,7 @@ import {GiHamburgerMenu} from 'react-icons/gi'
 import {GrClose} from 'react-icons/gr'
 import {HiCode} from 'react-icons/hi'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Header() {
     const [showDropdown, setShowDropdown] = useState(false)
@@ -23,10 +24,12 @@ export default function Header() {
                     <h2 className='header-nav-label disable-select'>Resume</h2>
                     <FaFileDownload className='header-nav-icon'/>
                 </div>
-                <div className='header-nav-button m-two'>
+
+                <Link to={'/projects'} className='header-nav-button m-two'>
                     <h2 className='header-nav-label disable-select'>Projects</h2>
                     <HiCode className='header-nav-icon'/>
-                </div>
+                </Link>
+
                 <a className='header-nav-button m-three' href='https://github.com/piperdaniel1' target='_blank'>
                     <h2 className='header-nav-label disable-select'>Github</h2>
                     <AiFillGithub className='header-nav-icon'/>
@@ -47,10 +50,12 @@ export default function Header() {
                     <h2 className='header-nav-label disable-select'>Resume</h2>
                     <FaFileDownload className='header-nav-icon'/>
                 </div>
-                <div className='header-nav-button two'>
+
+                <Link to='/projects' className='header-nav-button two'>
                     <h2 className='header-nav-label disable-select'>Projects</h2>
                     <HiCode className='header-nav-icon' style={{fontSize: '58px'}}/>
-                </div>
+                </Link>
+
                 <a className='header-nav-button three' href='https://github.com/piperdaniel1' target='_blank'>
                     <h2 className='header-nav-label disable-select'>Github</h2>
                     <AiFillGithub className='header-nav-icon'/>
