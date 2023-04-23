@@ -13,19 +13,16 @@ export default function Projects() {
                 <Header />
             </div>
 
-            <CircleSelector />
+            <CircleSelector selected={project} setSelected={setProject} />
 
             <ul className='paragraph-text-block' style={{
                 color: '#fff',
                 fontSize: '30px',
                 fontFamily: "'Roboto', sans-serif",
             }}>
-                <ChessAI />
-
-                <br />
-                <br />
-
-                <DiscordBot />
+                {project === 'Chess Bot' ? <ChessAI /> : null}
+                {project === 'Discord Bot' ? <DiscordBot /> : null}
+                {project === 'Wordle Bot' ?  null : null}
             </ul>
         </div>
     )
