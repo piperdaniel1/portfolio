@@ -12,13 +12,14 @@ export default function Projects() {
             <div className="header">
                 <Header />
             </div>
+
+            <CircleSelector />
+
             <ul className='paragraph-text-block' style={{
                 color: '#fff',
                 fontSize: '30px',
                 fontFamily: "'Roboto', sans-serif",
             }}>
-                <CircleSelector />
-
                 <ChessAI />
 
                 <br />
