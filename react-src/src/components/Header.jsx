@@ -13,9 +13,9 @@ export default function Header() {
 
     return (
         <div className="header-bar">
-            <a className='site-title-bg' href='/'>
+            <Link to={'/'} className='site-title-bg'>
                 <h1 className='header-site-title disable-select'>Daniel Piper</h1>
-            </a>
+            </Link>
 
             <div className={"mobile-header-nav-buttons " + (showDropdown ? 'shown' : 'hidden')}>
                 <div className='header-nav-button m-one'>

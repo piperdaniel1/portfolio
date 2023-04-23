@@ -14,6 +14,12 @@
   width: 100%;
 }
 
+.oregon-state-link {
+  display: inline;
+  text-decoration: underline;
+  color: rgb(215, 63, 9);
+}
+
 .link-block {
   color: rgb(255, 255, 255);
 }
