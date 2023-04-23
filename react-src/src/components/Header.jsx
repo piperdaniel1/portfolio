@@ -11,11 +11,9 @@ import { Link } from 'react-router-dom'
 export default function Header() {
     const [showDropdown, setShowDropdown] = useState(false)
 
-    
-
     return (
         <div className="header-bar">
-            <a className='site-title-bg' href='https://piperdaniel1.com'>
+            <a className='site-title-bg' href='/'>
                 <h1 className='header-site-title disable-select'>Daniel Piper</h1>
             </a>
 

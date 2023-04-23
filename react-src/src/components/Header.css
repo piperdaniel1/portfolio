@@ -1,6 +1,6 @@
 .header-bar {
     min-width: 100%;
-    height: 140px;
+    height: 100px;
     background-color: white;
     display: flex;
     align-items: center;
@@ -13,7 +13,7 @@
 }
 
 .header-site-title {
-    font-size: 90px;
+    font-size: 80px;
     width: 525px;
     margin: 0px;
 }
@@ -21,12 +21,12 @@
 .site-title-bg {
     /* background-color: wheat; */
     background-image: linear-gradient(to right, wheat, wheat, wheat, white);
-    min-width: 700px;
+    min-width: 600px;
     height: 100%;
     display: flex;
     align-items: center;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
     text-decoration: none;
     color: black;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -46,8 +46,8 @@
 }
 
 .header-nav-button {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-decoration: none;
     color: black;
     background-color: white; display: flex; align-items: center;
@@ -73,7 +73,8 @@
 }
 
 .header-nav-label {
-    font-size: 60px;
+    font-size: 38px;
+    font-family: 'Roboto', sans-serif;
 }
 .header-nav-icon {
     margin-left: 4px;
@@ -112,7 +113,7 @@
 }
 
 
-@media(max-width: 2350px) {
+@media(max-width: 2000px) {
     .header-nav-button.one {
         display: none;
     }
@@ -157,7 +158,7 @@
     }
 }
 
-@media(max-width: 2150px) {
+@media(max-width: 1800px) {
     .header-nav-button.two {
         display: none;
     }
@@ -172,7 +173,7 @@
     }
 }
 
-@media(max-width: 1900px) {
+@media(max-width: 1600px) {
     .header-nav-button.three {
         display: none;
     }
@@ -187,7 +188,7 @@
     }
 }
 
-@media(max-width: 1600px) {
+@media(max-width: 1400px) {
     .header-nav-button.four {
         display: none;
     }
@@ -202,7 +203,7 @@
     }
 }
 
-@media(max-width: 1250px) {
+@media(max-width: 1200px) {
     .primary-nav-button.five {
         display: none;
     }
@@ -233,13 +234,13 @@
 
     .mobile-nav-dropdown.shown:hover {
         font-size: 75px;
-        padding: 0px;
+        padding: 3px;
         color: orange;
     }
 
     .mobile-nav-dropdown.hidden:hover {
         font-size: 85px;
-        padding: 0px;
+        padding: 3px;
         color: orange;
     }
 
@@ -258,4 +259,54 @@
         min-width: 420px;
     }
 
+}
+
+@media (max-width: 650px) {
+    .header-site-title {
+        font-size: 50px;
+    }
+
+    .site-title-bg {
+        min-width: 300px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .mobile-nav-dropdown.shown {
+        font-size: 40px;
+    }
+
+    .mobile-nav-dropdown.shown:hover {
+        font-size: 45px;
+        padding: 3px;
+        color: orange;
+    }
+
+    .mobile-nav-dropdown.hidden {
+        font-size: 40px;
+        padding: 3px;
+        color: black;
+    }
+
+    .mobile-nav-dropdown.hidden:hover {
+        font-size: 43px;
+        padding: 3px;
+        color: orange;
+    }
+
+    .header-bar {
+        height: 80px;
+    }
+}
+
+@media (max-width: 450px) {
+    .header-site-title {
+        font-size: 36px;
+    }
+
+    .site-title-bg {
+        min-width: 180px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
