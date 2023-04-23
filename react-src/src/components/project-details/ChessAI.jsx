@@ -1,5 +1,6 @@
 import TechBubble from '../TechBubble';
 import ChessGame from '../ChessGame';
+import './ChessAI.css';
 
 export default function ChessAI(props) {
     let innerExperienceStyle = {
@@ -9,7 +10,8 @@ export default function ChessAI(props) {
     }
 
     return (
-        <li>Online Chess AI
+        <div className='outer-chess-ai-wrapper'>
+            <span>Online Chess AI</span>
             <br />
             <TechBubble lang='rust' />
             <TechBubble lang='python' />
@@ -45,6 +47,6 @@ export default function ChessAI(props) {
                 problem-solving and pushing the boundaries of what's possible.
             </span>
         </div>
-        </li>
+    </div>
     )
 }

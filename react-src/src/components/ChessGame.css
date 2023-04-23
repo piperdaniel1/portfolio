@@ -1,5 +1,4 @@
 .chess-game-wrapper {
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,7 +8,7 @@
 }
 
 .inner-chess-game-wrapper {
-    width: 800px;
+    width: 80%;
 }
 
 .chess-game-header {
@@ -28,6 +27,7 @@
     display: flex;
     align-items: center;
 }
+
 .chess-game-player-username {
     margin: 0px;
     margin-left: 8px;
@@ -40,7 +40,36 @@
     margin-bottom: 10px;
 }
 .chess-game-wrapper {
+    max-width: 100%;
     background-color: grey;
     padding: 10px;
     border: 1px solid rgb(255, 123, 123);
+}
+
+@media (max-width: 700px) {
+    .inner-chess-game-wrapper {
+        width: 95%;
+    }
+
+    .chess-game-player-username {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 570px) {
+    .chess-game-player-username {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 500px) {
+    .chess-profile-pic {
+        display: none;
+    }
+}
+
+@media (max-width: 350px) {
+    .chess-game-player-username {
+        font-size: 19px;
+    }
 }

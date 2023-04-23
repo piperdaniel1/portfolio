@@ -3,6 +3,7 @@ import { useState } from 'react';
 import ChessAI from './project-details/ChessAI';
 import DiscordBot from './project-details/DiscordBot';
 import CircleSelector from './project-details/CircleSelector';
+import './Projects.css'
 
 export default function Projects() {
     const [project, setProject] = useState('chess-ai')
@@ -15,15 +16,11 @@ export default function Projects() {
 
             <CircleSelector selected={project} setSelected={setProject} />
 
-            <ul className='paragraph-text-block' style={{
-                color: '#fff',
-                fontSize: '30px',
-                fontFamily: "'Roboto', sans-serif",
-            }}>
+            <div className='paragraph-text-block'>
                 {project === 'Chess Bot' ? <ChessAI /> : null}
                 {project === 'Discord Bot' ? <DiscordBot /> : null}
                 {project === 'Wordle Bot' ?  null : null}
-            </ul>
+            </div>
         </div>
     )
 }
