@@ -3,12 +3,6 @@ import ChessGame from '../ChessGame';
 import './ChessAI.css';
 
 export default function ChessAI(props) {
-    let innerExperienceStyle = {
-        color: '#fff',
-        fontSize: '24px',
-        fontFamily: "'Roboto', sans-serif",
-    }
-
     return (
         <div className='outer-chess-ai-wrapper'>
             <span>Online Chess AI</span>
@@ -19,7 +13,7 @@ export default function ChessAI(props) {
             <br />
 
             <div className='paragraph-text-block'>
-            <span style={innerExperienceStyle}>
+            <span className='inner-experience-text'>
                 My chess AI is a testament to my skills as a backend software engineer. Written entirely 
                 in Rust, it uses the minimax algorithm, along with a transposition table and alpha-beta 
                 pruning, to increase search speed. Board evaluation is based on various factors such as
@@ -29,7 +23,7 @@ export default function ChessAI(props) {
             <br />
             <ChessGame />
 
-            <span style={innerExperienceStyle}>
+            <span className='inner-experience-text'>
                 With over 5500 lines of Rust code, this is the third version of the AI. The first was
                 written in Python but proved to be too slow, while the second was written in C++, which
                 had its own challenges. Instead of rewriting that version, I took what I had learned and
@@ -41,7 +35,7 @@ export default function ChessAI(props) {
                 
             <br />
 
-            <span style={innerExperienceStyle}>
+            <span className='inner-experience-text'>
                 Overall, my chess AI demonstrates
                 my ability to create complex and efficient software solutions, as well as my passion for
                 problem-solving and pushing the boundaries of what's possible.

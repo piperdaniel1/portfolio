@@ -1,12 +1,8 @@
 import TechBubble from '../TechBubble';
 import HarloughNL from '../../sprites/harlough-nl-ex.jpg'
+import './DiscordBot.css';
 
 export default function DiscordBot() {
-    let innerExperienceStyle = {
-        color: '#fff',
-        fontSize: '24px',
-        fontFamily: "'Roboto', sans-serif",
-    }
 
     return (
         <li>Python Music Discord Bot - Harlough
@@ -15,7 +11,7 @@ export default function DiscordBot() {
             <br />
 
             <div className='paragraph-text-block'>
-            <span style={innerExperienceStyle}>
+            <span className='inner-experience-text'>
                 To learn more about backend Python development, I developed Harlough, a Discord
                 bot completely written in Python with around 1800 lines of code. Initially, it was
                 designed as a replacement for other discontinued Discord bots that played music from
@@ -23,11 +19,12 @@ export default function DiscordBot() {
                 features such as playing songs, queuing them up, pausing, and clearing the queue.
             </span>
 
-            <br />
-            <img src={HarloughNL} alt="Harlough playing Adele\'s Someone Like You in response to a natural language query" />
-            <br />
+            <div className='harlough-nl-wrapper'>
+                <img className='harlough-nl-img' src={HarloughNL} alt="Harlough playing Adele\'s Someone Like You in response to a natural language query" />
+                <p className='img-caption'>Harlough responding to a natural language query</p>
+            </div>
 
-            <span style={innerExperienceStyle}>
+            <span className='inner-experience-text'>
                 Harlough works by downloading songs locally and then streaming the file into the Guild voice channel.
                 To optimize performance, songs are only downloaded once and intelligently reused when the same or similar
                 query is requested again. The bot utilizes fuzzy finding to determine when to use a local song, and I
@@ -41,7 +38,7 @@ export default function DiscordBot() {
                 
             <br />
 
-            <span style={innerExperienceStyle}>
+            <span className='inner-experience-text' >
                 In short, I developed Harlough to provide a seamless music experience for Discord users with features that optimize performance and provide an intuitive interface.
             </span>
         </div>

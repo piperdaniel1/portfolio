@@ -6,7 +6,7 @@ import CircleSelector from './project-details/CircleSelector';
 import './Projects.css'
 
 export default function Projects() {
-    const [project, setProject] = useState('chess-ai')
+    const [project, setProject] = useState('Chess Bot')
 
     return (
         <div className="App">
