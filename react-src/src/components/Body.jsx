@@ -1,8 +1,5 @@
 import React from 'react';
 import '../styles/Body.css';
-import resume from '../sprites/Resume.pdf';
-import portfolio from '../sprites/Portfolio.pdf';
-// import headshot from '../sprites/daniel2.jpg';
 import coverPhoto from '../sprites/main-cover-photo.jpg';
 
 function Header() {
@@ -38,7 +35,7 @@ function Header() {
               fontSize: '30px',
               fontFamily: "'Roboto', sans-serif",
             }}>
-              I'm a senior Computer Science student at <a href='https://engineering.oregonstate.edu/EECS' target='_blank' className='oregon-state-link'>Oregon State University</a>. My education has touched on all aspects of programming,
+              I'm a senior Computer Science student at <a href='https://engineering.oregonstate.edu/EECS' rel='noreferrer' target='_blank' className='oregon-state-link'>Oregon State University</a>. My education has touched on all aspects of programming,
               but I have focused especially on Frontend and Backend web development. I have created multiple social networking sites for school
               and am now focused on creating a full stack web app to view home tempatures for my senior Capstone project.
             </p>

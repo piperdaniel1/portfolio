@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FaDiscord, FaChessBishop } from 'react-icons/fa';
 import { TbLetterW } from 'react-icons/tb';
 import './CircleSelector.css';

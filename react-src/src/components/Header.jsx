@@ -28,12 +28,12 @@ export default function Header() {
                     <HiCode className='header-nav-icon'/>
                 </Link>
 
-                <a className='header-nav-button m-three' href='https://github.com/piperdaniel1' target='_blank'>
+                <a className='header-nav-button m-three' href='https://github.com/piperdaniel1' rel='noreferrer' target='_blank'>
                     <h2 className='header-nav-label disable-select'>Github</h2>
                     <AiFillGithub className='header-nav-icon'/>
                 </a>
 
-                <a className='header-nav-button m-four' href='https://www.linkedin.com/in/daniel-piper-b2a311223/' target='_blank'>
+                <a className='header-nav-button m-four' href='https://www.linkedin.com/in/daniel-piper-b2a311223/' rel='noreferrer' target='_blank'>
                     <h2 className='header-nav-label disable-select'>Linkedin</h2>
                     <AiFillLinkedin className='header-nav-icon'/>
                 </a>
@@ -54,12 +54,12 @@ export default function Header() {
                     <HiCode className='header-nav-icon' style={{fontSize: '58px'}}/>
                 </Link>
 
-                <a className='header-nav-button three' href='https://github.com/piperdaniel1' target='_blank'>
+                <a className='header-nav-button three' href='https://github.com/piperdaniel1' rel='noreferrer' target='_blank'>
                     <h2 className='header-nav-label disable-select'>Github</h2>
                     <AiFillGithub className='header-nav-icon'/>
                 </a>
 
-                <a className='header-nav-button four' href='https://www.linkedin.com/in/daniel-piper-b2a311223/' target='_blank'>
+                <a className='header-nav-button four' href='https://www.linkedin.com/in/daniel-piper-b2a311223/' rel='noreferrer' target='_blank'>
                     <h2 className='header-nav-label disable-select'>Linkedin</h2>
                     <AiFillLinkedin className='header-nav-icon'/>
                 </a>

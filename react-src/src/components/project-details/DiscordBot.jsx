@@ -1,7 +1,7 @@
 import TechBubble from '../TechBubble';
 import HarloughNL from '../../sprites/harlough-nl-ex.jpg'
 
-export default function DiscordBot(props) {
+export default function DiscordBot() {
     let innerExperienceStyle = {
         color: '#fff',
         fontSize: '24px',
@@ -24,7 +24,7 @@ export default function DiscordBot(props) {
             </span>
 
             <br />
-            <img src={HarloughNL} />
+            <img src={HarloughNL} alt="Harlough playing Adele\'s Someone Like You in response to a natural language query" />
             <br />
 
             <span style={innerExperienceStyle}>
