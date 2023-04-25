@@ -42,12 +42,6 @@
     z-index: 0;
 }
 
-@media (max-width: 650px) {
-    .line {
-        top: 11.5%;
-    }
-}
-
 .line-section {
     width: calc(100% / 3);
     height: 5px;
@@ -87,10 +81,6 @@
 }
 
 @media (max-width: 600px) {
-    .line {
-        top: 11%;
-    }
-
     .circle {
         width: 80px;
         height: 80px;
@@ -110,10 +100,6 @@
 }
 
 @media (max-width: 420px) {
-    .line {
-        top: 10%;
-    }
-
     .circle {
         width: 60px;
         height: 60px;

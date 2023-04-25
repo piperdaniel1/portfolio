@@ -8,6 +8,7 @@ import BlackKing from '../sprites/black-chess-king.jpg'
 
 async function queryFen(fen, time) {
     console.log('Querying fen:', fen, 'time:', time);
+
     try {
         const response = await axios.post('http://localhost:8080/query/fen', {
             Fen: fen,
@@ -82,7 +83,7 @@ export default function ChessGame() {
                 </div>
             </div>
             <div className='inner-chess-game-wrapper'>
-                <Chessboard id='chessboard' position={game.fen()} onPieceDrop={onDrop}  />
+                <Chessboard id='chessboard' position={game.fen()} onPieceDrop={onDrop} />
             </div>
         </div>
     );
