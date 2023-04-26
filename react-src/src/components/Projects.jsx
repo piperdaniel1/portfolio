@@ -16,7 +16,7 @@ export default function Projects() {
 
             <CircleSelector selected={project} setSelected={setProject} />
 
-            <div className='paragraph-text-block'>
+            <div className='projects-section-wrapper'>
                 {project === 'Chess Bot' ? <ChessAI /> : null}
                 {project === 'Discord Bot' ? <DiscordBot /> : null}
                 {project === 'Wordle Bot' ?  null : null}

@@ -1,4 +1,5 @@
 .inner-experience-text {
+    display: block;
     width: 50%;
     min-width: 800px;
     color: white;
@@ -14,6 +15,12 @@
 }
 
 .paragraph-text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body-text-wrapper {
     color: #fff;
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
@@ -23,10 +30,42 @@
     align-items: center;
 }
 
+.section-header-text {
+    margin-bottom: 0px;
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.project-header-wrapper {
+    max-width: 50%;
+    min-width: 800px;
+    margin: 20px;
+    margin-bottom: 30px;
+}
+
+.outer-project-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 @media (max-width: 1100px) {
     .paragraph-text-block {
         padding-left: 10px;
         padding-right: 10px;
         display: block;
+    }
+
+    .project-header-wrapper {
+        min-width: 0px;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .section-header-text {
+        font-size: 50px;
     }
 }

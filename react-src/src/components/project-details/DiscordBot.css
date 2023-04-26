@@ -28,39 +28,10 @@
     color: #ccc9c2;
 }
 
-.discord-bot-wrapper {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.discord-bot-header {
-    max-width: 50%;
-    min-width: 800px;
-    margin: 20px;
-    margin-bottom: 30px;
-}
-
-.section-header-text {
-    margin-bottom: 0px;
-}
-
 @media (max-width: 1100px) {
     .harlough-nl-wrapper {
         width: 100%;
         min-width: 0px;
         margin: 0px;
-    }
-
-    .discord-bot-header {
-        min-width: 0px;
-        max-width: 100%;
-        width: 100%;
-    }
-}
-
-@media (max-width: 500px) {
-    .section-header-text {
-        font-size: 50px;
     }
 }

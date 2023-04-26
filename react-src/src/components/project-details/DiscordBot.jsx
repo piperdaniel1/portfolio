@@ -5,13 +5,13 @@ import './DiscordBot.css';
 export default function DiscordBot() {
 
     return (
-        <div className='discord-bot-wrapper'>
-            <div className='discord-bot-header'>
+        <div className='outer-project-wrapper'>
+            <div className='project-header-wrapper'>
                 <h1 className='section-header-text'>Harlough - The AI Music Discord Bot</h1>
                 <TechBubble lang='python' />
             </div>
 
-            <div className='paragraph-text-block'>
+            <div className='body-text-wrapper'>
                 <span className='inner-experience-text'>
                     To learn more about backend Python development, I developed Harlough, a Discord
                     bot completely written in Python with around 1800 lines of code. Initially, it was
