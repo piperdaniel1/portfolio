@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Harlough - The AI Music Discord Bot",
+        "tagline": "A Discord bot that plays music using AI",
+        "description": "Harlough is a Discord Bot that can play music from YouTube in reponse to natural language prompts. It uses the OpenAI Chat Completions API to generate a response to the prompt, and then uses the YouTube API to find a song that matches the response. It then plays the song in the voice channel that the user is in.",
+        "technologies": ["Python", "OpenAI API", "YouTube API", "Discord API", "Go HTTP Server", "JSON", "Microsoft Azure", "Requests (Python)", "Beautiful Soup (Python)"],
+        "image-link": "https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png",
+        "project-type": "personal",
+        "src-link": "https://github.com/piperdaniel1/harlough"
+    },
+    {
+        "title": "Ferric Fury - The Rust Chess AI",
+        "tagline": "A versatile chess AI written entirely from scratch in Rust",
+        "description": "Ferric Fury is a clever chess bot, meticulously crafted with the powerful Rust programming language. Boasting a robust 1400 ELO rating, it thrives on the Lichess platform, fearlessly challenging opponents to thrilling matches. Ferric Fury's strategic prowess is based on it's optimized Minimax algorithm, making it a formidable adversary across the board. As its name suggests, the AI harnesses its ironclad logic to unleash a torrent of tactical moves and fierce attacks, transforming each game into a captivating dance of Ferric Fury. The bot's arsenal includes lots of common Chess AI optimization including an opening book and a transposition table. Currently the bot is available exclusively on this site to play against.",
+        "technologies": ["Rust", "Go HTTP Server", "JavaScript", "Lichess API", "Reqwest (Rust)", "JSON"],
+        "image-link": "https://images.prismic.io/lichess/5cfd2630-2a8f-4fa9-8f78-04c2d9f0e5fe_lichess-box-1024.png?auto=compress,format",
+        "project-type": "personal",
+        "src-link": "https://github.com/piperdaniel1/chess-ai"
+    },
+    {
+        "title": "My Portfolio Website (this site)",
+        "tagline": "A website to showcase my projects and skills",
+        "description": "This website was built using the React JavaScript library. It is a single-page application that uses React Router to handle navigation. The site is hosted on Firebase Hosting and is served using a custom domain name. The site is optimized for all screen sizes, right down to small phones like the iPhone SE. It also has some elements (playing the Chess AI for example) that rely on a Go backend server, which is hosted on Microsoft Azure.",
+        "technologies": ["React", "JavaScript", "HTML", "CSS", "Firebase Hosting", "Go HTTP Server", "Microsoft Azure"],
+        "image-link": "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png",
+        "project-type": "personal",
+        "src-link": "https://github.com/piperdaniel1/portfolio"
+    },
+    {
+        "title": "College of Business Schedule Generator",
+        "tagline": "Automatically create color-coded excel schedules from When To Work schedules.",
+        "description": "This project allowed the College of Business IT department to seamlessly transition their student schedules from a manual Excel-based solution to a When To Work based approach. The one downside of When To Work is it did not generate an easily readable color-coded schedule of the shifts for that week (like everyone was used to from the manual Excel based approach). This project uses Python to automatically query the backend API of When To Work and pull the schedule information. This schedule is then used to programmatically generate a color-coded Excel file with each shift represented. The main challenge for the project was interfacing with When To Work, as they do not have an officially supported API. Therefore, I had to reverse engineer the backend of the site and pretend to be the web client to get the schedule information.",
+        "technologies": ["Python", "When To Work API", "Excel", "Excel (Python)"],
+        "image-link": "https://whentowork.com/images_sales/w2w_logo_circle.png",
+        "project-type": "personal",
+        "src-link": "https://github.com/piperdaniel1/w2w-parser"
+    },
+    {
+        "title": "Trading Bot - Stock and Crypto Analysis",
+        "tagline": "Analyze stock and crypto market data using trading signals and indicators",
+        "description": "This trading-bot is designed to collect and analyze price and trade data from the stock and crypto markets. It includes a set of datatypes to store price and trade data, a collection of indicators to analyze price data, and various strategies that utilize trade indicators to create Action_Histories. The trading-bot is built using Python and can be used for backtesting and generating trade signals. It supports multiple indicators such as ATR, EMA, and TR_EMA, and can be extended to incorporate more strategies and indicators.",
+        "technologies": ["Python", "Pandas", "Datetime", "Matplotlib"],
+        "image-link": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png",
+        "project-type": "personal",
+        "src-link": "https://github.com/piperdaniel1/trading-bot"
+    }
+]
