@@ -43,5 +43,25 @@
         "image-link": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png",
         "project-type": "personal",
         "src-link": "https://github.com/piperdaniel1/trading-bot"
+    },
+    {
+        "title": "Liquidity - Sensor-Driven In-Home Climate Control",
+        "tagline": "Optimizing window usage for efficient climate control in homes",
+        "description": "This Oregon State University Computer Science Capstone Project aims to empower homeowners to make optimal use of their windows to cool and heat their homes, using sensors placed throughout their home. The project is free, open-source, highly configurable, and not locked into any ecosystem. It requires sensor modules for temperature and humidity data and can be used with a cloud-hosted or self-hosted web server. The project is designed to be accessible and adaptable to users' needs while helping to reduce utility bills. My contribution was mainly to the frontend React code for the site which involved a lot of graphing and data analysis in Javascript, as well as the creation of React components to display the analysis results.",
+        "technologies": ["Arduino Nano RP2040 Connect", "DHT11 Sensor", "Python", "Flask", "HTML", "CSS", "JavaScript", "Azure"],
+        "image-link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Arduino_shiny_logo.svg/1200px-Arduino_shiny_logo.svg.png",
+        "project-type": "school",
+        "src-link": "https://github.com/sensor-climate-control"
+    },
+    {
+        "title": "CS 290 and CS 340 Final Projects",
+        "tagline": "Final projects for CS 290 and CS 340 at Oregon State University",
+        "description": "These projects were both social networking sites. The CS 290 (Web Development) site used a crude JSON database to store user generated content and the CS 340 (Databases) site moved to a MariaDB (SQL) database. During CS 340 the frontend for the site was also transitioned to use Vue, a frontend javascript framework that is a popular alternative to React. These were both group final projects with the same group between each one. However, each time I took the lead on the project, generating a large amount of code in all aspects of the project.",
+        "technologies": ["HTML", "CSS", "JavaScript", "Vue", "MariaDB", "SQL", "JSON"],
+        "image-link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png",
+        "project-type": "school",
+        "src-link": "https://github.com/EthanSWickman/fat-hiker-old"
+    },
+    {
     }
 ]
