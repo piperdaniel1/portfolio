@@ -1,5 +1,12 @@
 [
     {
+        "name": "Wordle Social Network",
+        "technologies": ["Javascript", "Firebase", "Firebase Hosting", "Firebase Realtime DB", "Firebase Firestore", "Stripe", "Go", "New York Times API"]
+        "tagline": "A social network for Wordle players",
+        "long_description": "A social network for Wordle players. Users can create an account, add friends, and track their Wordle stats. Users can also view a customized feed with their friend's guesses, as well as see how well each friend is doing overall. There is also a comprehensive guess analysis page where you can see how good each of your guesses was compared to other possible guesses.",
+        "img_link": "https://static01.nyt.com/images/2022/03/02/crosswords/alpha-wordle-icon-new/alpha-wordle-icon-new-square320-v3.png?format=pjpg&quality=100&auto=webp&disable=upscale",
+    },
+    {
         "title": "Harlough - The AI Music Discord Bot",
         "tagline": "A Discord bot that plays music using AI",
         "description": "Harlough is a Discord Bot that can play music from YouTube in reponse to natural language prompts. It uses the OpenAI Chat Completions API to generate a response to the prompt, and then uses the YouTube API to find a song that matches the response. It then plays the song in the voice channel that the user is in.",
