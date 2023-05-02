@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     margin: 1.5rem 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .inner-project-listing {
@@ -44,12 +45,18 @@
 }
 
 .project-listing-title-icon {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     margin-right: 0.5rem;
 }
 
+@media (max-width: 600px) {
+    .project-listing-title-icon {
+        display: none;
+    }
+}
+
 .project-listing-title-text {
-    font-size: 1.5rem;
+    font-size: 2.0rem;
     font-weight: bold;
     margin: 0;
 }
@@ -60,12 +67,14 @@
 
 .project-listing-title-date {
     margin: 0.5rem 0;
+    font-size: 1.0rem;
     color: #888;
 }
 
 .project-listing-title-tagline {
     margin: 0;
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .project-listing-src-link {
@@ -103,6 +112,7 @@
 .project-listing-description-text {
     margin: 0;
     white-space: pre-line;
+    font-size: 1.2rem;
 }
 
 .project-listing-tech {
