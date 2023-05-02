@@ -5,6 +5,15 @@ import ProjectListing from './ProjectListing';
 import Separator from './reusable/Separator';
 
 export default function AllProjects() {
+    let tech_list = new Set();
+    for (let project of projects.projects) {
+        for (let tech of project.technologies) {
+            tech_list.add(tech);
+        }
+    }
+
+    console.log(tech_list);
+
     return (
         <div className="App">
             <div className="header">
