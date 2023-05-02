@@ -1,7 +1,7 @@
 {
     "projects": [
         {
-            "name": "Wordle Social Network",
+            "title": "Wordle Social Network",
             "tagline": "A social network for Wordle players",
             "description": "A social network for Wordle players hosted at https://friendsofwordle.com. Users can create an account, add friends, and track their Wordle stats. Users can also view a customized feed with their friend's guesses, as well as see how well each friend is doing overall. There is also a comprehensive guess analysis page where you can see how good each of your guesses was compared to other possible guesses.",
             "technologies": ["Javascript", "Firebase", "Firebase Hosting", "Firebase Realtime DB", "Firebase Firestore", "Stripe", "Go", "New York Times API"],

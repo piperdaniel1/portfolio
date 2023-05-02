@@ -8,35 +8,34 @@ export default function ProjectListing(props) {
     return (
         <div className="project-listing-wrapper">
             <div className="inner-project-listing">
-                <div className="project-listing-image">
-                    <img src={props['image-link']} alt={props.title} />
-                </div>
-
-                <div className="project-listing-details">
-                    <div className="project-listing-header">
-                        <div className="inner-project-listing-header">
-                            <div className="project-listing-title">
-                                {
-                                    props['project-type'] === "personal" ?
-                                        <BsFillPersonFill className="project-listing-title-icon" />
-                                        :
-                                        <IoSchoolSharp className="project-listing-title-icon" />
-                                }
-
-                                <h1 className="project-listing-title-text">{props.title}</h1>
-                            </div>
-                            <div className="project-listing-header-details">
-                                <p className="project-listing-title-date">{props.date}</p>
-                                <p className="project-listing-title-tagline">{props.tagline}</p>
-                            </div>
-                        </div>
-
-                        { props['src-link'] ?  <div className="project-listing-src-link">
-                            <a href={props['src-link']} target="_blank" rel="noreferrer">
-                                <HiCode className="project-listing-src-link-icon" />
-                            </a>
-                        </div> : ''}
+                <div className="project-listing-header">
+                    <div className="project-listing-image">
+                        <img src={props['image-link']} alt={props.title} />
                     </div>
+                    <div className="inner-project-listing-header">
+                        <div className="project-listing-title">
+                            {
+                                props['project-type'] === "personal" ?
+                                    <BsFillPersonFill className="project-listing-title-icon" />
+                                    :
+                                    <IoSchoolSharp className="project-listing-title-icon" />
+                            }
+
+                            <h1 className="project-listing-title-text">{props.title}</h1>
+                        </div>
+                        <div className="project-listing-header-details">
+                            <p className="project-listing-title-date">{props.date}</p>
+                            <p className="project-listing-title-tagline">{props.tagline}</p>
+                        </div>
+                    </div>
+
+                    { props['src-link'] ?  <div className="project-listing-src-link">
+                        <a href={props['src-link']} target="_blank" rel="noreferrer">
+                            <HiCode className="project-listing-src-link-icon" />
+                        </a>
+                    </div> : ''}
+                </div>
+                <div className="project-listing-details">
                     <div className="project-listing-description">
                         <p className="project-listing-description-text">{props.description}</p>
                     </div>
