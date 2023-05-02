@@ -1,5 +1,3 @@
-/* ProjectListing.css */
-
 .project-listing-wrapper {
     display: flex;
     justify-content: center;
@@ -14,7 +12,7 @@
     border-radius: 8px;
     overflow: hidden;
     max-width: 900px;
-    position: relative; /* Adding this line will make the project-listing-src-link position relative to this element */
+    position: relative;
 }
 
 .project-listing-header {
