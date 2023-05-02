@@ -34,7 +34,7 @@
         "src-link": "https://github.com/piperdaniel1/portfolio"
     },
     {
-        "title": "College of Business Schedule Generator",
+        "title": "W2W-Parser - College of Business Schedule Generator",
         "tagline": "Automatically create color-coded excel schedules from When To Work schedules.",
         "description": "This project allowed the College of Business IT department to seamlessly transition their student schedules from a manual Excel-based solution to a When To Work based approach. The one downside of When To Work is it did not generate an easily readable color-coded schedule of the shifts for that week (like everyone was used to from the manual Excel based approach). This project uses Python to automatically query the backend API of When To Work and pull the schedule information. This schedule is then used to programmatically generate a color-coded Excel file with each shift represented. The main challenge for the project was interfacing with When To Work, as they do not have an officially supported API. Therefore, I had to reverse engineer the backend of the site and pretend to be the web client to get the schedule information.",
         "technologies": ["Python", "When To Work API", "Excel", "Excel (Python)"],
@@ -61,7 +61,7 @@
         "src-link": "https://github.com/sensor-climate-control"
     },
     {
-        "title": "CS 290 and CS 340 Final Projects",
+        "title": "Scumblr - CS 290 and CS 340 Final Projects",
         "tagline": "Final projects for CS 290 and CS 340 at Oregon State University",
         "description": "These projects were both social networking sites. The CS 290 (Web Development) site used a crude JSON database to store user generated content and the CS 340 (Databases) site moved to a MariaDB (SQL) database. During CS 340 the frontend for the site was also transitioned to use Vue, a frontend javascript framework that is a popular alternative to React. These were both group final projects with the same group between each one. However, each time I took the lead on the project, generating a large amount of code in all aspects of the project.",
         "technologies": ["HTML", "CSS", "JavaScript", "Vue", "MariaDB", "SQL", "JSON"],
@@ -70,5 +70,21 @@
         "src-link": "https://github.com/EthanSWickman/fat-hiker-old"
     },
     {
+        "title": "Smallsh - CS 344 Final Project",
+        "tagline": "A small bash-like shell program written in C",
+        "description": "This project is a simplified bash-like shell program implemented in C. The program is designed to parse and execute user input commands, such as 'cd', 'status', and 'exit', as well as launching other foreground and background processes. It demonstrates a solid understanding of process management, signal handling, and input/output redirection in a Unix-like environment. The project was developed as a final project for the CS 344 (Operating Systems) course at Oregon State University.",
+        "technologies": ["C", "Unix", "Shell Programming", "Process Management", "Signal Handling", "I/O Redirection"],
+        "image-link": "https://banner2.cleanpng.com/20180705/txh/kisspng-bash-shell-script-command-line-interface-z-shell-5b3df571eaf1a4.5375084915307871859623.jpg",
+        "project-type": "school",
+        "src-link": null
+    },
+    {
+        "title": "Correctify - CS 492 Final Project",
+        "tagline": "An AI-powered tool for correcting writing errors on Android devices",
+        "description": "Correctify is an AI-powered tool designed to fix writing errors, such as spelling and grammar, in any given text. Users can simply paste their text into the app, and Correctify will format and correct any detected errors. The application is built for Android and leverages OpenAI's API to perform text corrections. This project was developed by a team of four students as a final project for the CS 492 (Mobile Software Development) course at Oregon State University.",
+        "technologies": ["Android", "OpenAI API", "Kotlin", "XML"],
+        "image-link": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Android_robot_2014.svg/1024px-Android_robot_2014.svg.png",
+        "project-type": "school",
+        "src-link": "https://github.com/osu-cs492-w23/final-project-team16",
     }
 ]
