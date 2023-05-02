@@ -1,5 +1,6 @@
 .outer-tech-bubble {
     display: inline-block;
+    margin: 5px;
 }
 .tech-bubble-link {
     color: white;

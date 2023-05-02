@@ -9,7 +9,7 @@ export default function ProjectListing(props) {
         <div className="project-listing-wrapper">
             <div className="inner-project-listing">
                 <div className="project-listing-image">
-                    <img src={props.image} alt={props.title} />
+                    <img src={props['image-link']} alt={props.title} />
                 </div>
 
                 <div className="project-listing-details">
@@ -17,7 +17,7 @@ export default function ProjectListing(props) {
                         <div className="inner-project-listing-header">
                             <div className="project-listing-title">
                                 {
-                                    props.type === "personal" ?
+                                    props['project-type'] === "personal" ?
                                         <BsFillPersonFill className="project-listing-title-icon" />
                                         :
                                         <IoSchoolSharp className="project-listing-title-icon" />
@@ -31,11 +31,11 @@ export default function ProjectListing(props) {
                             </div>
                         </div>
 
-                        <div className="project-listing-src-link">
-                            <a href={props.link} target="_blank" rel="noreferrer">
+                        { props['src-link'] ?  <div className="project-listing-src-link">
+                            <a href={props['src-link']} target="_blank" rel="noreferrer">
                                 <HiCode className="project-listing-src-link-icon" />
                             </a>
-                        </div>
+                        </div> : ''}
                     </div>
                     <div className="project-listing-description">
                         <p className="project-listing-description-text">{props.description}</p>
@@ -43,8 +43,8 @@ export default function ProjectListing(props) {
                     <div className="project-listing-tech">
                         <div className="inner-project-listing-tech">
                             {
-                                props.tech.map((tech, index) =>
-                                    <TechBubble key={index} tech={tech} />
+                                props.technologies.map((tech, index) =>
+                                    <TechBubble key={index} lang={tech} />
                                 )
                             }
                         </div>

@@ -99,8 +99,12 @@ export default function TechBubble(props) {
     )
   } else {
     return (
-      <div className='tech-bubble'>
-        <p>{props.lang}</p>
+      <div className='outer-tech-bubble'>
+        <a className='tech-bubble-link' href='https://nodejs.org/en/about/'>
+          <div className='node-tech-bubble'>
+            <p className='tech-name'>{props.lang}</p>
+          </div>
+        </a>
       </div>
     )
   }
