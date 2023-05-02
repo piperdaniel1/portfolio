@@ -15,7 +15,7 @@
             "tagline": "A Discord bot that plays music using AI",
             "description": "Harlough is a Discord Bot that can play music from YouTube in reponse to natural language prompts. It uses the OpenAI Chat Completions API to generate a response to the prompt, and then uses the YouTube API to find a song that matches the response. It then plays the song in the voice channel that the user is in.",
             "technologies": ["Python", "OpenAI API", "YouTube API", "Discord API", "Go HTTP Server", "JSON", "Microsoft Azure", "Requests (Python)", "Beautiful Soup (Python)"],
-            "image-link": "https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png",
+            "image-link": "https://logosandtypes.com/wp-content/uploads/2022/07/openai.svg",
             "project-type": "personal",
             "date": "October 2022",
             "src-link": "https://github.com/piperdaniel1/harlough"
@@ -85,7 +85,7 @@
             "tagline": "Optimizing window usage for efficient climate control in homes",
             "description": "This Oregon State University Computer Science Capstone Project aims to empower homeowners to make optimal use of their windows to cool and heat their homes, using sensors placed throughout their home. The project is free, open-source, highly configurable, and not locked into any ecosystem. It requires sensor modules for temperature and humidity data and can be used with a cloud-hosted or self-hosted web server. The project is designed to be accessible and adaptable to users' needs while helping to reduce utility bills. My contribution was mainly to the frontend React code for the site which involved a lot of graphing and data analysis in Javascript, as well as the creation of React components to display the analysis results.",
             "technologies": ["Arduino", "Python", "Flask", "HTML", "CSS", "JavaScript", "Azure"],
-            "image-link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Arduino_shiny_logo.svg/1200px-Arduino_shiny_logo.svg.png",
+            "image-link": "https://swimburger.net/media/ppnn3pcl/azure.png",
             "project-type": "school",
             "date": "September 2022",
             "src-link": "https://github.com/sensor-climate-control"
@@ -105,7 +105,7 @@
             "tagline": "A small bash-like shell program written in C",
             "description": "This project is a simplified bash-like shell program implemented in C. The program is designed to parse and execute user input commands, such as 'cd', 'status', and 'exit', as well as launching other foreground and background processes. It demonstrates a solid understanding of process management, signal handling, and input/output redirection in a Unix-like environment. The project was developed as a final project for the CS 344 (Operating Systems) course at Oregon State University.",
             "technologies": ["C", "Unix", "Shell Programming", "Process Management", "Signal Handling", "I/O Redirection"],
-            "image-link": "https://banner2.cleanpng.com/20180705/txh/kisspng-bash-shell-script-command-line-interface-z-shell-5b3df571eaf1a4.5375084915307871859623.jpg",
+            "image-link": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Bash_Logo_Colored.svg",
             "project-type": "school",
             "date": "June 2021",
             "src-link": null
@@ -115,7 +115,7 @@
             "tagline": "An AI-powered tool for correcting writing errors on Android devices",
             "description": "Correctify is an AI-powered tool designed to fix writing errors, such as spelling and grammar, in any given text. Users can simply paste their text into the app, and Correctify will format and correct any detected errors. The application is built for Android and leverages OpenAI's API to perform text corrections. This project was developed by a team of four students as a final project for the CS 492 (Mobile Software Development) course at Oregon State University.",
             "technologies": ["Android", "OpenAI API", "Kotlin", "XML"],
-            "image-link": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Android_robot_2014.svg/1024px-Android_robot_2014.svg.png",
+            "image-link": "https://i0.wp.com/www.alphr.com/wp-content/uploads/2020/11/Grammarly-vs-Grammarly-Premium.jpg?fit=1200%2C666&ssl=1",
             "project-type": "school",
             "date": "December 2022",
             "src-link": "https://github.com/osu-cs492-w23/final-project-team16"
