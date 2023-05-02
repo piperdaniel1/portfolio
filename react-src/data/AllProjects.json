@@ -1,10 +1,12 @@
 [
     {
         "name": "Wordle Social Network",
-        "technologies": ["Javascript", "Firebase", "Firebase Hosting", "Firebase Realtime DB", "Firebase Firestore", "Stripe", "Go", "New York Times API"]
         "tagline": "A social network for Wordle players",
-        "long_description": "A social network for Wordle players. Users can create an account, add friends, and track their Wordle stats. Users can also view a customized feed with their friend's guesses, as well as see how well each friend is doing overall. There is also a comprehensive guess analysis page where you can see how good each of your guesses was compared to other possible guesses.",
-        "img_link": "https://static01.nyt.com/images/2022/03/02/crosswords/alpha-wordle-icon-new/alpha-wordle-icon-new-square320-v3.png?format=pjpg&quality=100&auto=webp&disable=upscale",
+        "description": "A social network for Wordle players. Users can create an account, add friends, and track their Wordle stats. Users can also view a customized feed with their friend's guesses, as well as see how well each friend is doing overall. There is also a comprehensive guess analysis page where you can see how good each of your guesses was compared to other possible guesses.",
+        "technologies": ["Javascript", "Firebase", "Firebase Hosting", "Firebase Realtime DB", "Firebase Firestore", "Stripe", "Go", "New York Times API"],
+        "image-link": "https://static01.nyt.com/images/2022/03/02/crosswords/alpha-wordle-icon-new/alpha-wordle-icon-new-square320-v3.png?format=pjpg&quality=100&auto=webp&disable=upscale",
+        "project-type": "personal",
+        "src-link": "https://github.com/piperdaniel1/play-wordle-bot",
     },
     {
         "title": "Harlough - The AI Music Discord Bot",
@@ -16,9 +18,27 @@
         "src-link": "https://github.com/piperdaniel1/harlough"
     },
     {
-        "title": "Ferric Fury - The Rust Chess AI",
+        "title": "Ferric Fury 1.0 - The Python Version of my Chess AI",
+        "tagline": "A chess AI written using the chess-python library",
+        "description": "The goal of this first iteration was simply to make a good Chess AI. However, once I got up to speed I realized that this pure-python approach had some issues that were going to plague me in the end. For one, I could not efficiently search more than four moves ahead. I implemented a lot of features to help remedy this, including alpha beta pruning and a transposition table but I was still hard limited by my rate of boards analyzed per second.",
+        "technologies": ["Rust", "Go HTTP Server", "JavaScript", "Lichess API", "Reqwest (Rust)", "JSON"],
+        "image-link": "https://images.prismic.io/lichess/5cfd2630-2a8f-4fa9-8f78-04c2d9f0e5fe_lichess-box-1024.png?auto=compress,format",
+        "project-type": "personal",
+        "src-link": "https://github.com/piperdaniel1/chess-ai"
+    },
+    {
+        "title": "Ferric Fury 2.0 - The C++ Version of my Chess AI",
+        "tagline": "A chess AI written entirely from scratch in C++",
+        "description": "The goal of 2.0 was to make a faster AI using the speed of a compiled language. However, this version of Ferric Fury ended up having some critical issues. It was not very optimized due to there being a significant amount of memory issues that caused me to have to go for a copy-board-based move push approach. This approach meant that it was only a bit faster than the Python version. Part of this was because I had made move generation from scratch this time, instead of using a similar library to python-chess. I'm sure there were a lot of smart optimizations that went into python-chess that allowed it to compete with my C++ version for speed despite being in Python.",
+        "technologies": ["Rust", "Go HTTP Server", "JavaScript", "Lichess API", "Reqwest (Rust)", "JSON"],
+        "image-link": "https://images.prismic.io/lichess/5cfd2630-2a8f-4fa9-8f78-04c2d9f0e5fe_lichess-box-1024.png?auto=compress,format",
+        "project-type": "personal",
+        "src-link": "https://github.com/piperdaniel1/chess-ai"
+    },
+    {
+        "title": "Ferric Fury 3.0 - The Rust Version of my Chess AI",
         "tagline": "A versatile chess AI written entirely from scratch in Rust",
-        "description": "Ferric Fury is a clever chess bot, meticulously crafted with the powerful Rust programming language. Boasting a robust 1400 ELO rating, it thrives on the Lichess platform, fearlessly challenging opponents to thrilling matches. Ferric Fury's strategic prowess is based on it's optimized Minimax algorithm, making it a formidable adversary across the board. As its name suggests, the AI harnesses its ironclad logic to unleash a torrent of tactical moves and fierce attacks, transforming each game into a captivating dance of Ferric Fury. The bot's arsenal includes lots of common Chess AI optimization including an opening book and a transposition table. Currently the bot is available exclusively on this site to play against.",
+        "description": "Ferric Fury 3.0 is a clever chess bot, meticulously crafted with the powerful Rust programming language. It has accomplished much of what I hoped for from previous versions. Boasting a robust 1400 ELO rating, it thrives on the Lichess platform, fearlessly challenging opponents to thrilling matches. Ferric Fury's strategic prowess is based on it's optimized Minimax algorithm, making it a formidable adversary across the board. As its name suggests, the AI harnesses its ironclad logic to unleash a torrent of tactical moves and fierce attacks, transforming each game into a captivating dance of Ferric Fury. The bot's arsenal includes lots of common Chess AI optimization including an opening book and a transposition table. Currently the bot is available exclusively on this site to play against.",
         "technologies": ["Rust", "Go HTTP Server", "JavaScript", "Lichess API", "Reqwest (Rust)", "JSON"],
         "image-link": "https://images.prismic.io/lichess/5cfd2630-2a8f-4fa9-8f78-04c2d9f0e5fe_lichess-box-1024.png?auto=compress,format",
         "project-type": "personal",
