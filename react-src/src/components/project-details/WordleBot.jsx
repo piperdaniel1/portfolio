@@ -5,38 +5,41 @@ export default function WordleBot() {
     return (
         <div className='outer-project-wrapper'>
             <div className='project-header-wrapper'>
-                <h1 className='section-header-text'>Wordle Bot</h1>
+                <h1 className='section-header-text'>Friends Of Wordle - Wordle Social Network</h1>
                 <TechBubble lang='javascript' />
                 <TechBubble lang='react' />
+                <TechBubble lang='firebase' />
+                <TechBubble lang='Stripe' />
+                <TechBubble lang='Go' />
             </div>
 
             <div className='body-text-wrapper'>
                 <span className='inner-experience-text'>
-                    My chess AI is a testament to my skills as a backend software engineer. Written entirely
-                    in Rust, it uses the minimax algorithm, along with a transposition table and alpha-beta
-                    pruning, to increase search speed. Board evaluation is based on various factors such as
-                    piece value and position, making it a formidable opponent for players of all skill levels.
+                    Friends of Wordle is a Wordle community platform that enhances the Wordle experience with social and analytical features.
+                    The platform allows users to sync their Wordle stats to their accounts, making them accessible from any device. The community
+                    aspect lets users follow others, view daily Wordle scores, and share their own without revealing spoilers. This works a lot
+                    better than the alternate system of posting screenshots on Twitter or Facebook. The full feature set of the site can be accessed
+                    after users create an account and pay a one-time fee or activate a free two-week trial. The platform is ad-free and the entry fee
+                    helps cover the Firebase website hosting costs.
                 </span>
 
                 <br />
 
                 <span className='inner-experience-text'>
-                    With over 5500 lines of Rust code, this is the third version of the AI. The first was
-                    written in Python but proved to be too slow, while the second was written in C++, which
-                    had its own challenges. Instead of rewriting that version, I took what I had learned and
-                    created this third, stable version in Rust. The AI can operate as an engine server using TCP,
-                    a chess CLI client, or a remote Lichess bot. To make it accessible to you on this site, I created a
-                    Go HTTP web server that converts HTTP requests into TCP requests to the engine, allowing
-                    anyone to play against my AI in real-time from a web browser.
+                    The site is build using React and Firebase. The backend is predominantly handled with Firebase, with the exception of a few endpoints
+                    that are handled by a Go webserver that is hosted on Azure. The backend was seperated out like this to make the project more cost effective
+                    as the Firebase system of serverless cloud functions can get expensive quickly. The other slightly tricky part of the site was getting
+                    the current solution to the Wordle. At first, this was done by looking at the source code of the Wordle game. Now, New York Times has
+                    an official API that can be used to get the current solution. The site also uses Stripe for payment processing and the Stripe API to
+                    manage paymentrs to the site.
                 </span>
 
                 <br />
 
                 <span className='inner-experience-text'>
-                    Overall, my chess AI demonstrates
-                    my ability to create complex and efficient software solutions, as well as my passion for
-                    problem-solving and pushing the boundaries of what's possible.
-                </span>
+                    One of the main features of the site is the advanced guess analysis system. Users can see how many words were remaining after each guess, 
+                    along with other insights like how well their guess stacked up to other guesses they could have made at that point. 
+                    This analysis, and the site in general, is currently in beta, with plans to expand features and improve the overall experience in future updates. </span>
             </div>
         </div>
     )

@@ -65,6 +65,7 @@ export default function TechBubble(props) {
             <div className='outer-tech-bubble'>
                 <div className='tech-bubble-link'>
                     <div className='node-tech-bubble'>
+                        <div className='tech-logo' />
                         <p className='tech-name'>{props.lang}</p>
                     </div>
                 </div>
