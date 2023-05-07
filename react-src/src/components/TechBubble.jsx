@@ -6,6 +6,7 @@ import rustLogo from '../sprites/rust.png';
 import cppLogo from '../sprites/cpp.png';
 import cLogo from '../sprites/c.png';
 import kotlinLogo from '../sprites/kotlin.png';
+import javascriptLogo from '../sprites/javascript.png';
 import './TechBubble.css';
 
 let techDb = {
@@ -49,6 +50,11 @@ let techDb = {
         name: 'Kotlin',
         link: 'https://kotlinlang.org/'
     },
+    'javascript': {
+        logo: javascriptLogo,
+        name: 'JavaScript',
+        link: 'https://www.javascript.com/'
+    }
 };
 
 export default function TechBubble(props) {

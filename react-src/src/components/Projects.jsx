@@ -2,6 +2,7 @@ import Header from './Header';
 import { useState } from 'react';
 import ChessAI from './project-details/ChessAI';
 import DiscordBot from './project-details/DiscordBot';
+import WordleBot from './project-details/WordleBot';
 import CircleSelector from './project-details/CircleSelector';
 import './Projects.css'
 import { Link } from 'react-router-dom';
@@ -29,7 +30,7 @@ export default function Projects() {
             <div className='projects-section-wrapper'>
                 {project === 'Chess Bot' ? <ChessAI /> : null}
                 {project === 'Discord Bot' ? <DiscordBot /> : null}
-                {project === 'Wordle Bot' ? null : null}
+                {project === 'Wordle Bot' ? <WordleBot /> : null}
             </div>
         </div>
     )
