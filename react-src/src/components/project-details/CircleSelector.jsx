@@ -35,9 +35,9 @@ const CircleSelector = (props) => {
                 </div>
             </div>
             <div className="circle-labels">
-                <span>Discord Bot</span>
-                <span>Wordle Bot</span>
-                <span>Chess Bot</span>
+                <span>Harlough</span>
+                <span>Friends of Wordle</span>
+                <span>Ferric Fury</span>
             </div>
         </div>
     );

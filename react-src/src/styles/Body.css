@@ -5,6 +5,11 @@
     background-color: #212533;
 }
 
+.inline-nav-link {
+    text-decoration: underline;
+    color: aqua;
+}
+
 .paragraph-text-block {
     color: #fff;
     font-size: 30px;

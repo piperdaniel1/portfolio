@@ -41,8 +41,8 @@ export default function WordleBot() {
                 </div>
 
                 <span className='inner-experience-text'>
-                    One of the main features of the site is the advanced guess analysis system. Users can see how many words were remaining after each guess, 
-                    along with other insights like how well their guess stacked up to other guesses they could have made at that point. 
+                    One of the main features of the site is the advanced guess analysis system. Users can see how many words were remaining after each guess,
+                    along with other insights like how well their guess stacked up to other guesses they could have made at that point.
                     This analysis, and the site in general, is currently in beta, with plans to expand features and improve the overall experience in future updates. </span>
             </div>
         </div>
