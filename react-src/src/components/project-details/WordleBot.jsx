@@ -1,4 +1,5 @@
 import TechBubble from '../TechBubble';
+import FowTechStack from '../../sprites/fow-tech-stack.png';
 import './WordleBot.css';
 
 export default function WordleBot() {
@@ -34,7 +35,10 @@ export default function WordleBot() {
                     manage paymentrs to the site.
                 </span>
 
-                <br />
+                <div className='harlough-nl-wrapper'>
+                    <img className='harlough-nl-img' src={FowTechStack} alt="Friends of Wordle's underlying tech stack" />
+                    <p className='img-caption'>Friends of Wordle's underlying tech stack</p>
+                </div>
 
                 <span className='inner-experience-text'>
                     One of the main features of the site is the advanced guess analysis system. Users can see how many words were remaining after each guess, 

@@ -32,6 +32,7 @@ export default function Projects() {
                 {project === 'Discord Bot' ? <DiscordBot /> : null}
                 {project === 'Wordle Bot' ? <WordleBot /> : null}
             </div>
+            <br />
         </div>
     )
 }

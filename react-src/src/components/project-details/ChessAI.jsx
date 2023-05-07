@@ -1,12 +1,13 @@
 import TechBubble from '../TechBubble';
 import ChessGame from '../ChessGame';
+import ChessTechStack from '../../sprites/chess-tech-stack.png';
 import './ChessAI.css';
 
 export default function ChessAI(props) {
     return (
         <div className='outer-project-wrapper'>
             <div className='project-header-wrapper'>
-                <h1 className='section-header-text'>Online Chess AI</h1>
+                <h1 className='section-header-text'>Ferric Furry - Chess Engine</h1>
                 <TechBubble lang='rust' />
                 <TechBubble lang='python' />
                 <TechBubble lang='cpp' />
@@ -33,7 +34,10 @@ export default function ChessAI(props) {
                     anyone to play against my AI in real-time from a web browser.
                 </span>
 
-                <br />
+                <div className='harlough-nl-wrapper'>
+                    <img className='harlough-nl-img' src={ChessTechStack} alt="Ferric Fury's underlying tech stack" />
+                    <p className='img-caption'>Ferric Fury's underlying tech stack</p>
+                </div>
 
                 <span className='inner-experience-text'>
                     Overall, my chess AI demonstrates

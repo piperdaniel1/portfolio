@@ -1,9 +1,9 @@
 import TechBubble from '../TechBubble';
 import HarloughNL from '../../sprites/harlough-nl-ex.jpg'
+import HarloughTechStack from '../../sprites/harlough-tech-stack.png'
 import './DiscordBot.css';
 
 export default function DiscordBot() {
-
     return (
         <div className='outer-project-wrapper'>
             <div className='project-header-wrapper'>
@@ -36,9 +36,12 @@ export default function DiscordBot() {
                     To make this work, I instructed the ChatGPT API to respond with a JSON object that Harlough's backend interprets
                     to execute the required commands.
                 </span>
-                    
-                <br />
 
+                <div className='harlough-nl-wrapper'>
+                    <img className='harlough-nl-img' src={HarloughTechStack} alt="Harlough's underlying tech stack" />
+                    <p className='img-caption'>Harlough's underlying tech stack</p>
+                </div>
+                    
                 <span className='inner-experience-text' >
                     In short, I developed Harlough to provide a seamless music experience for Discord users with features that optimize performance and provide an intuitive interface.
                 </span>
