@@ -4,12 +4,6 @@ import '../styles/Body.css';
 import coverPhoto from '../sprites/main-cover-photo.jpg';
 
 function Body() {
-    let innerExperienceStyle = {
-        color: '#fff',
-        fontSize: '24px',
-        fontFamily: "'Roboto', sans-serif",
-    }
-
     return (
         <div class="body-section">
             <div class="main-title-bar">
