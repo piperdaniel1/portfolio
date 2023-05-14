@@ -30,35 +30,37 @@ function Body() {
                         <p className='paragraph-text-block'>
                             I'm a senior Computer Science student at&nbsp;
                             <a href='https://engineering.oregonstate.edu/EECS' rel='noreferrer' target='_blank' className='oregon-state-link'>Oregon State University</a>.
-                            My education has touched on all aspects of programming, but I have focused especially on Frontend and Backend web development.
-                            I have created multiple social networking sites for school and am now focused on creating a full stack web app to view home tempatures
-                            for my senior Capstone project.
+                            Graduating in June of 2023, my education has touched on all aspects of programming. My passion is for front and back end web development.
+                            Having created multiple social networking sites for college classes, my senior Capstone project is a full stack web app to monitor home 
+                            temperatures in various zones and direct automated changes in the house infrastructure to optimize energy efficiency.
                         </p>
                     </div>
 
-                    <div className='work-experience-section'>
-                        <h2 className='section-header'>Work Experience</h2>
+                    {// <div className='work-experience-section'>
+                    //     <h2 className='section-header'>Work Experience</h2>
 
-                        <div className='paragraph-text-block'>
-                            IT Technician - Oregon State University
-                            <br />
-                            <span style={innerExperienceStyle}>
-                                I worked on the frontend and backend of the College of Business tech stack. I got experience with
-                                many different technologies including Active Directory, Powershell, Azure, VMware, and others.
-                                My time at Oregon State helped me learn valuable communication skills interfacing with faculty and students,
-                                especially when designing and building internal tools and scripts for the College of Business.
-                            </span>
-                        </div>
-                    </div>
+                    //     <div className='paragraph-text-block'>
+                    //         IT Technician - Oregon State University
+                    //         <br />
+                    //         <span style={innerExperienceStyle}>
+                    //             I worked on the frontend and backend of the College of Business tech stack. I got experience with
+                    //             many different technologies including Active Directory, Powershell, Azure, VMware, and others.
+                    //             My time at Oregon State helped me learn valuable communication skills interfacing with faculty and students,
+                    //             especially when designing and building internal tools and scripts for the College of Business.
+                    //         </span>
+                    //     </div>
+                    // </div>
+                    }
 
                     <div className='notable-projects-section'>
                         <h2 className='section-header'>Notable Projects</h2>
                         <p className='paragraph-text-block'>
-                            One of my favorite things about about studying programming at Oregon State is it has given me the
-                            inspiration and skills to work on my own projects. I learned how to program in Basic years before
-                            I went to college and since then programmed in Java and other languages before I started my studies.
-                            However, my time at Oregon State helped me learn the skills (through classes and self study) to build
-                            my own full stack web applications.
+                            One of the best aspects of studying programming at Oregon State is how I felt so inspired by the new
+                            skills and knowledge to continue developing my own projects. Having started coding at age 9 I had 
+                            experience with Basic, Java, Lua, and C# before I went to college. As a self taught programmer, I worked extensively
+                            on a high school robotics team (winning State and National recognition) and wrote numerous games for my own 
+                            entertainment. However, my time at Oregon State helped me expand my language competency and build more broadly
+                            on my background (through classes and self study) to build full stack web applications.
                         </p>
                         <p className='paragraph-text-block'>
                             During my time at university, I first learned Python and then expanded my skills to web development technologies
@@ -85,9 +87,11 @@ function Body() {
                             to develop innovative solutions using a wide range of technologies.
                         </p>
                         <p className='paragraph-text-block'>
-                            As I approach the end of my studies at Oregon State, I am excited to continue exploring new technologies and building creative
-                            projects. I am confident that the skills and experiences I've gained during my time at the university will serve me well in
-                            my future endeavors as a programmer and a software engineer.
+                            As I approach the end of my studies at Oregon State, I am excited to continue exploring new
+                            technologies and building creative projects. I am confident that the skills and experiences
+                            I've gained during my time at the university will serve me well in my future endeavors as a
+                            programmer and a software engineer.  I look forward to unleashing my creative energy into a
+                            larger web ecosystem and being a part of a team to optimize its functionality and secure its success.
                         </p>
                     </div>
                 </div>
