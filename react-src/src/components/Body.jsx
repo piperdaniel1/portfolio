@@ -8,12 +8,14 @@ function Body() {
         <div class="body-section">
             <div class="main-title-bar">
                 <div className='main-body-header'>
-                    <img className='main-body-image' src={coverPhoto} alt='Profile Pic' />
+                    <div className='inner-main-body-header'>
+                        <img className='main-body-image' src={coverPhoto} alt='Profile Pic' />
 
-                    <div className='brief-info'>
-                        <h1 class="main-title-text">Hey, I'm Daniel Piper.</h1>
+                        <div className='brief-info'>
+                            <h1 class="main-title-text">Daniel Piper</h1>
 
-                        <h1 class="secondary-title-text">Full Stack Web Developer</h1>
+                            <h1 class="secondary-title-text">Full Stack Web Developer</h1>
+                        </div>
                     </div>
                 </div>
 
@@ -25,34 +27,34 @@ function Body() {
                             I'm a senior Computer Science student at&nbsp;
                             <a href='https://engineering.oregonstate.edu/EECS' rel='noreferrer' target='_blank' className='oregon-state-link'>Oregon State University</a>.
                             Graduating in June of 2023, my education has touched on all aspects of programming. My passion is for front and back end web development.
-                            Having created multiple social networking sites for college classes, my senior Capstone project is a full stack web app to monitor home 
+                            Having created multiple social networking sites for college classes, my senior Capstone project is a full stack web app to monitor home
                             temperatures in various zones and direct automated changes in the house infrastructure to optimize energy efficiency.
                         </p>
                     </div>
 
                     {// <div className='work-experience-section'>
-                    //     <h2 className='section-header'>Work Experience</h2>
+                        //     <h2 className='section-header'>Work Experience</h2>
 
-                    //     <div className='paragraph-text-block'>
-                    //         IT Technician - Oregon State University
-                    //         <br />
-                    //         <span style={innerExperienceStyle}>
-                    //             I worked on the frontend and backend of the College of Business tech stack. I got experience with
-                    //             many different technologies including Active Directory, Powershell, Azure, VMware, and others.
-                    //             My time at Oregon State helped me learn valuable communication skills interfacing with faculty and students,
-                    //             especially when designing and building internal tools and scripts for the College of Business.
-                    //         </span>
-                    //     </div>
-                    // </div>
+                        //     <div className='paragraph-text-block'>
+                        //         IT Technician - Oregon State University
+                        //         <br />
+                        //         <span style={innerExperienceStyle}>
+                        //             I worked on the frontend and backend of the College of Business tech stack. I got experience with
+                        //             many different technologies including Active Directory, Powershell, Azure, VMware, and others.
+                        //             My time at Oregon State helped me learn valuable communication skills interfacing with faculty and students,
+                        //             especially when designing and building internal tools and scripts for the College of Business.
+                        //         </span>
+                        //     </div>
+                        // </div>
                     }
 
                     <div className='notable-projects-section'>
                         <h2 className='section-header'>Notable Projects</h2>
                         <p className='paragraph-text-block'>
                             One of the best aspects of studying programming at Oregon State is how I felt so inspired by the new
-                            skills and knowledge to continue developing my own projects. Having started coding at age 9 I had 
+                            skills and knowledge to continue developing my own projects. Having started coding at age 9 I had
                             experience with Basic, Java, Lua, and C# before I went to college. As a self taught programmer, I worked extensively
-                            on a high school robotics team (winning State and National recognition) and wrote numerous games for my own 
+                            on a high school robotics team (winning State and National recognition) and wrote numerous games for my own
                             entertainment. However, my time at Oregon State helped me expand my language competency and build more broadly
                             on my background (through classes and self study) to build full stack web applications.
                         </p>
@@ -69,7 +71,7 @@ function Body() {
                             only helped me hone my programming skills but also taught me valuable lessons about project management, collaboration,
                             and problem-solving. Some of the key projects I've worked on include&nbsp;
                             <Link to={'/projects/3'} className='inline-nav-link'>
-                                 Ferric Fury (a Chess AI)
+                                Ferric Fury (a Chess AI)
                             </Link>,&nbsp;
                             <Link to={'/projects/1'} className='inline-nav-link'>
                                 Harlough (an AI-powered Discord Bot)
