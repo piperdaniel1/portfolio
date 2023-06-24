@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import '../styles/Body.css';
-import coverPhoto from '../sprites/main-cover-photo.jpg';
+import coverPhoto from '../sprites/daniel.jpg';
+import inventOregon from '../sprites/deep_dive.jpg';
+import capstone from '../sprites/capstone_group.jpg';
 
 function Body() {
     return (
@@ -13,7 +15,6 @@ function Body() {
 
                         <div className='brief-info'>
                             <h1 class="main-title-text">Daniel Piper</h1>
-
                             <h1 class="secondary-title-text">Full Stack Web Developer</h1>
                         </div>
                     </div>
@@ -24,11 +25,11 @@ function Body() {
                         <h2 className='section-header'>Current Plans</h2>
 
                         <p className='paragraph-text-block'>
-                            I'm a senior Computer Science student at&nbsp;
-                            <a href='https://engineering.oregonstate.edu/EECS' rel='noreferrer' target='_blank' className='oregon-state-link'>Oregon State University</a>.
-                            Graduating in June of 2023, my education has touched on all aspects of programming. My passion is for front and back end web development.
-                            Having created multiple social networking sites for college classes, my senior Capstone project is a full stack web app to monitor home
-                            temperatures in various zones and direct automated changes in the house infrastructure to optimize energy efficiency.
+                            As of June 2023, I have graduated from &nbsp;
+                            <a href='https://engineering.oregonstate.edu/EECS' rel='noreferrer' target='_blank' className='oregon-state-link'>Oregon State University</a>&nbsp;
+                            with a bachelor's degree in Computer Science. I'm now looking for backend and frontend
+                            web development work, although my education has touched on many other aspects of programming.
+                            For more information about my skills, check out my notable projects below!
                         </p>
                     </div>
 
@@ -48,6 +49,13 @@ function Body() {
                         // </div>
                     }
 
+                    <div className='body-photo-section'>
+                        <div className='body-photo-container'>
+                            <img className='body-photo' src={inventOregon} alt='Invent Oregon' />
+                            <p className='body-photo-caption'>Competing at Invent Oregon 2023 with Deep Dive Robotics.</p>
+                        </div>
+                    </div>
+
                     <div className='notable-projects-section'>
                         <h2 className='section-header'>Notable Projects</h2>
                         <p className='paragraph-text-block'>
@@ -66,6 +74,14 @@ function Body() {
                             responsive web applications. Additionally, I delved into mobile development, particularly Android, learning Kotlin as a
                             powerful alternative to Java for Android app development.
                         </p>
+
+
+                        <div className='body-photo-section'>
+                            <div className='body-photo-container'>
+                                <img className='body-photo' src={capstone} alt='Invent Oregon' />
+                                <p className='body-photo-caption'>Me with my 2023 OSU Capstone expo group</p>
+                            </div>
+                        </div>
                         <p className='paragraph-text-block'>
                             Throughout my time at Oregon State, I worked on various projects, both individually and in teams. These projects not
                             only helped me hone my programming skills but also taught me valuable lessons about project management, collaboration,
