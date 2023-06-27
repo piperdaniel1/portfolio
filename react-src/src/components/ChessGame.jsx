@@ -10,7 +10,7 @@ async function queryFen(fen, time) {
     console.log('Querying fen:', fen, 'time:', time);
 
     try {
-        const response = await axios.post('http://api.danielpiper.dev:8080/query/fen', {
+        const response = await axios.post('https://api.danielpiper.dev/query/fen', {
             Fen: fen,
             Time: time,
         });

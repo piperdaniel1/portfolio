@@ -146,6 +146,7 @@
 
     .inner-main-body-header {
         width: 100%;
+        flex-direction: column-reverse;
     }
 
     .secondary-title-text {
