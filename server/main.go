@@ -10,6 +10,7 @@ import (
 	"time"
 	"regexp"
 	"fmt"
+	"log"
 )
 
 func enableCors(w *http.ResponseWriter) {
@@ -229,7 +230,11 @@ func main() {
 		w.Write(response)
 	})
 
-	println("Server is running: http://localhost:80")
+	println("Server is running: https://localhost")
 
-	http.ListenAndServe(":80", nil)
+	err := http.ListenAndServeTLS(":443", "/etc/letsencrypt/live/api.danielpiper.dev/fullchain.pem", "/etc/letsencrypt/live/api.danielpiper.dev/privkey.pem", nil)
+	//err := http.ListenAndServe(":80", nil)
+	if err != nil {
+		log.Println("Server had error: ", err)
+	}
 }
