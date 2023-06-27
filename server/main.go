@@ -229,7 +229,7 @@ func main() {
 		w.Write(response)
 	})
 
-	println("Server is running: http://localhost:80")
+	println("Server is running: https://localhost:80")
 
-	http.ListenAndServe(":80", nil)
+	http.ListenAndServeTLS(":443", nil)
 }

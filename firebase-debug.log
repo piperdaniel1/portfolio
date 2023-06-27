@@ -1,0 +1,10 @@
+[debug] [2023-06-27T03:34:43.058Z] ----------------------------------------------------------------------
+[debug] [2023-06-27T03:34:43.059Z] Command:       /usr/local/bin/firebase /home/daniel/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2023-06-27T03:34:43.060Z] CLI Version:   12.4.0
+[debug] [2023-06-27T03:34:43.060Z] Platform:      linux
+[debug] [2023-06-27T03:34:43.060Z] Node Version:  v16.16.0
+[debug] [2023-06-27T03:34:43.060Z] Time:          Mon Jun 26 2023 20:34:43 GMT-0700 (Pacific Daylight Time)
+[debug] [2023-06-27T03:34:43.060Z] ----------------------------------------------------------------------
+[debug] 
+[error] 
+[error] Error: Not in a Firebase app directory (could not locate firebase.json)
