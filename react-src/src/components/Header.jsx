@@ -64,7 +64,7 @@ export default function Header() {
                     <HiCode className='header-nav-icon' style={{fontSize: '58px'}}/>
                 </Link>
 
-                <a className='primary-nav-button five' href='mailto:piperdaniel1@gmail.com'>
+                <a className='primary-nav-button five' href='mailto:daniel@danielpiper.dev'>
                     <h2 className='header-nav-label disable-select'>Email me</h2>
                 </a>
             </div>
