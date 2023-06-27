@@ -25,9 +25,10 @@ export default function WordleBot() {
                 </span>
 
                 <br />
+                <br />
 
                 <span className='inner-experience-text'>
-                    The site is build using React and Firebase. The backend is predominantly handled with Firebase, with the exception of a few endpoints
+                    The site is built using React and Firebase. The backend is predominantly handled with Firebase, with the exception of a few endpoints
                     that are handled by a Go webserver that is hosted on Azure. The backend was seperated out like this to make the project more cost effective
                     as the Firebase system of serverless cloud functions can get expensive quickly. The other slightly tricky part of the site was getting
                     the current solution to the Wordle. At first, this was done by looking at the source code of the Wordle game. Now, New York Times has

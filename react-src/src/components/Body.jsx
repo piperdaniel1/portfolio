@@ -99,7 +99,7 @@ function Body() {
                             to develop innovative solutions using a wide range of technologies.
                         </p>
                         <p className='paragraph-text-block'>
-                            As I approach the end of my studies at Oregon State, I am excited to continue exploring new
+                            I am excited to continue exploring new
                             technologies and building creative projects. I am confident that the skills and experiences
                             I've gained during my time at the university will serve me well in my future endeavors as a
                             programmer and a software engineer.  I look forward to unleashing my creative energy into a

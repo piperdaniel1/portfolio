@@ -49,14 +49,14 @@ export default function Header() {
                     <FaFileDownload className='header-nav-icon'/>
                 </div>
 
-                <a className='header-nav-button two' href='https://www.linkedin.com/in/daniel-piper-b2a311223/' rel='noreferrer' target='_blank'>
-                    <h2 className='header-nav-label disable-select'>Linkedin</h2>
-                    <AiFillLinkedin className='header-nav-icon'/>
-                </a>
-
-                <a className='header-nav-button three' href='https://github.com/piperdaniel1' rel='noreferrer' target='_blank'>
+                <a className='header-nav-button two' href='https://github.com/piperdaniel1' rel='noreferrer' target='_blank'>
                     <h2 className='header-nav-label disable-select'>Github</h2>
                     <AiFillGithub className='header-nav-icon'/>
+                </a>
+
+                <a className='header-nav-button three' href='https://www.linkedin.com/in/daniel-piper-b2a311223/' rel='noreferrer' target='_blank'>
+                    <h2 className='header-nav-label disable-select'>Linkedin</h2>
+                    <AiFillLinkedin className='header-nav-icon'/>
                 </a>
 
                 <Link to='/projects' className='header-nav-button four'>
