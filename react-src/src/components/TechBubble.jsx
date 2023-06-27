@@ -6,102 +6,81 @@ import rustLogo from '../sprites/rust.png';
 import cppLogo from '../sprites/cpp.png';
 import cLogo from '../sprites/c.png';
 import kotlinLogo from '../sprites/kotlin.png';
+import javascriptLogo from '../sprites/javascript.png';
 import './TechBubble.css';
 
+let techDb = {
+    'react': {
+        logo: reactLogo,
+        name: 'React',
+        link: 'https://reactjs.org/'
+    },
+    'node': {
+        logo: nodeLogo,
+        name: 'NodeJS',
+        link: 'https://nodejs.org/en/about/'
+    },
+    'firebase': {
+        logo: firebaseLogo,
+        name: 'Firebase',
+        link: 'https://firebase.google.com/'
+    },
+    'python': {
+        logo: pythonLogo,
+        name: 'Python',
+        link: 'https://www.python.org/'
+    },
+    'rust': {
+        logo: rustLogo,
+        name: 'Rust',
+        link: 'https://www.rust-lang.org/'
+    },
+    'cpp': {
+        logo: cppLogo,
+        name: 'C++',
+        link: 'https://isocpp.org/'
+    },
+    'c': {
+        logo: cLogo,
+        name: 'C',
+        link: 'https://en.wikipedia.org/wiki/C_(programming_language)'
+    },
+    'kotlin': {
+        logo: kotlinLogo,
+        name: 'Kotlin',
+        link: 'https://kotlinlang.org/'
+    },
+    'javascript': {
+        logo: javascriptLogo,
+        name: 'JavaScript',
+        link: 'https://www.javascript.com/'
+    }
+};
+
 export default function TechBubble(props) {
-  if (props.lang === 'react') {
+    const tech = techDb[props.lang];
+
+    if (!tech) {
+        return (
+            <div className='outer-tech-bubble'>
+                <div className='tech-bubble-link'>
+                    <div className='node-tech-bubble'>
+                        <div className='tech-logo' />
+                        <p className='tech-name'>{props.lang}</p>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+
     return (
-      <div className='outer-tech-bubble'>
-        <a className='tech-bubble-link' href='https://reactjs.org/'>
-          <div className='react-tech-bubble'>
-            <img className='tech-logo' src={reactLogo} alt='React Logo' />
-            <p className='tech-name'>React</p>
-          </div>
-        </a>
-      </div>
-    )
-  } else if (props.lang === 'node') {
-    return (
-      <div className='outer-tech-bubble'>
-        <a className='tech-bubble-link' href='https://nodejs.org/en/about/'>
-          <div className='node-tech-bubble'>
-            <img className='tech-logo' src={nodeLogo} alt='Node Logo' />
-            <p className='tech-name'>NodeJS</p>
-          </div>
-        </a>
-      </div>
-    )
-  } else if (props.lang === 'firebase') {
-    return (
-      <div className='outer-tech-bubble'>
-        <a className='tech-bubble-link' href='https://firebase.google.com/'>
-          <div className='firebase-tech-bubble'>
-            <img className='tech-logo' src={firebaseLogo} alt='Firebase Logo' />
-            <p className='tech-name'>Firebase</p>
-          </div>
-        </a>
-      </div>
-    )
-  } else if (props.lang === 'python') {
-    return (
-      <div className='outer-tech-bubble'>
-        <a className='tech-bubble-link' href='https://www.python.org/'>
-          <div className='python-tech-bubble'>
-            <img className='tech-logo' src={pythonLogo} alt='Python Logo' />
-            <p className='tech-name'>Python</p>
-          </div>
-        </a>
-      </div>
-    )
-  } else if (props.lang === 'rust') {
-    return (
-      <div className='outer-tech-bubble'>
-        <a className='tech-bubble-link' href='https://www.rust-lang.org/'>
-          <div className='rust-tech-bubble'>
-            <img className='tech-logo' src={rustLogo} alt='Rust Logo' />
-            <p className='tech-name'>Rust</p>
-          </div>
-        </a>
-      </div>
-    )
-  } else if (props.lang === 'cpp') {
-    return (
-      <div className='outer-tech-bubble'>
-        <a className='tech-bubble-link' href='https://isocpp.org/'>
-          <div className='cpp-tech-bubble'>
-            <img className='tech-logo' src={cppLogo} alt='C++ Logo' />
-            <p className='tech-name'>C++</p>
-          </div>
-        </a>
-      </div>
-    )
-  } else if (props.lang === 'c') {
-    return (
-      <div className='outer-tech-bubble'>
-        <a className='tech-bubble-link' href='https://en.wikipedia.org/wiki/C_(programming_language)'>
-          <div className='c-tech-bubble'>
-            <img className='tech-logo' src={cLogo} alt='C Logo' />
-            <p className='tech-name'>C</p>
-          </div>
-        </a>
-      </div>
-    )
-  } else if (props.lang === 'kotlin') {
-    return (
-      <div className='outer-tech-bubble'>
-        <a className='tech-bubble-link' href='https://kotlinlang.org/'>
-          <div className='kotlin-tech-bubble'>
-            <img className='tech-logo' src={kotlinLogo} alt='Kotlin Logo' />
-            <p className='tech-name'>Kotlin</p>
-          </div>
-        </a>
-      </div>
-    )
-  } else {
-    return (
-      <div className='tech-bubble'>
-        <p>{props.lang}</p>
-      </div>
-    )
-  }
+        <div className='outer-tech-bubble'>
+            <a className='tech-bubble-link' href={tech.link}>
+                <div className='node-tech-bubble'>
+                    <img className='tech-logo' src={tech.logo} alt={`${tech.name} Logo`} />
+                    <p className='tech-name'>{tech.name}</p>
+                </div>
+            </a>
+        </div>
+    );
 }

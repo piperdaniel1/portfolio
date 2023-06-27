@@ -1,12 +1,13 @@
 .outer-tech-bubble {
     display: inline-block;
+    margin: 5px;
 }
 .tech-bubble-link {
     color: white;
     text-decoration: none;
 }
 .tech-name {
-    font-size: 15px;
+    font-size: 1.1rem;
     margin: 0px;
 }
 .tech-logo {

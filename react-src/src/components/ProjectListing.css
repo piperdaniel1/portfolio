@@ -1,0 +1,125 @@
+.project-listing-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.inner-project-listing {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 900px;
+    position: relative;
+}
+
+.project-listing-header {
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+.project-listing-image {
+    width: auto;
+    margin-right: 1rem;
+}
+
+.project-listing-image img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.inner-project-listing-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-listing-title {
+    display: flex;
+    align-items: center;
+}
+
+.project-listing-title-icon {
+    font-size: 2.2rem;
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 600px) {
+    .project-listing-title-icon {
+        display: none;
+    }
+}
+
+.project-listing-title-text {
+    font-size: 2.0rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.project-listing-header-details {
+    font-size: 0.9rem;
+}
+
+.project-listing-title-date {
+    margin: 0.5rem 0;
+    font-size: 1.0rem;
+    color: #888;
+}
+
+.project-listing-title-tagline {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.project-listing-src-link {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.project-listing-src-link a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.project-listing-src-link-icon {
+    font-size: 1.5rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.project-listing-src-link-icon:hover {
+    color: #0070f3;
+}
+
+.project-listing-details {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.project-listing-description {
+    margin-top: 1rem;
+}
+
+.project-listing-description-text {
+    margin: 0;
+    white-space: pre-line;
+    font-size: 1.2rem;
+}
+
+.project-listing-tech {
+    margin-top: 1rem;
+}
+
+.inner-project-listing-tech {
+    display: flex;
+    flex-wrap: wrap;
+}

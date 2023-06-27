@@ -1,36 +1,173 @@
 .main-body-header {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  background-color: #212533;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #212533;
+}
+
+.inner-main-body-header {
+    width: 75%;
+    display: flex;
+    align-items: center;
+}
+
+.inline-nav-link {
+    text-decoration: underline;
+    color: aqua;
+}
+
+.paragraph-text-block {
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .brief-info {
-  margin-left: max(50px, 5%);
-  margin-right: max(50px, 5%);
+    text-align: center;
+    width: 100%;
+    margin-left: max(50px, 5%);
+    margin-right: max(50px, 5%);
+}
+
+.main-title-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .body-section {
-  width: 100%;
+    width: 100%;
+}
+
+.body-photo-section {
+    width: 100%;
+}
+
+.body-photo-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.body-photo-caption {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+}
+
+.body-photo {
+    width: 50%;
+}
+
+.oregon-state-link {
+    display: inline;
+    text-decoration: underline;
+    color: rgb(215, 63, 9);
 }
 
 .link-block {
-  color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
 }
 
 .main-body-image {
-  width: 55%;
-  max-width: 1500px;
+    width: 55%;
+    max-width: 1000px;
+}
+
+.main-body-text {
+    width: 65%;
+    text-align: left;
+    margin-top: 25px
+}
+/* color: rgb(255, 166, 0); */
+
+.section-header {
+    color: rgb(255, 186, 57);
+    font-size: 45px;
+    font-family: Roboto, sans-serif;
+    margin-bottom: 20px;
 }
 
 .main-title-text {
-  color: white;
-  font-size: 120px;
-  font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 80px;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .secondary-title-text {
-  color: white;
-  font-size: 70px;
-  font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 40px;
+    margin-top: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media(max-width: 2100px) {
+    .brief-info {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .main-body-text {
+        width: 70%;
+    }
+}
+
+@media(max-width: 1800px) {
+    .brief-info {
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+
+    .main-title-text {
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+
+    .secondary-title-text {
+        margin-top: 10px;
+        font-size: 30px;
+    }
+
+    .main-body-text {
+        width: 80%;
+    }
+}
+
+@media(max-width: 1450px) {
+    .main-title-text {
+        margin-top: 60px;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .inner-main-body-header {
+        width: 100%;
+    }
+
+    .secondary-title-text {
+        margin-top: 20px;
+        font-size: 20px;
+        margin-bottom: 60px;
+    }
+
+    .main-body-header {
+        flex-direction: column;
+    }
+
+    .main-body-image {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .main-body-text {
+        width: 90%;
+    }
+
+    .body-photo {
+        width: 90%;
+    }
 }
